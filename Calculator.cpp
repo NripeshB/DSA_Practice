@@ -2,7 +2,11 @@
 #include <cmath>
 using namespace std;
 const double pi = std::acos(-1);
+
 //something new
+
+//adding a comment
+
 
 class SimpleOp{
     protected:
