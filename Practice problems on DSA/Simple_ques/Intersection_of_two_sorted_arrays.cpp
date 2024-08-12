@@ -4,7 +4,7 @@
 #include <iostream>
 #include <bits/stdc++.h> 
 #include <vector>
-
+using namespace std;
 //1. Unoptimised uproach:
 //The code below shows error due to taking too long to run
 
