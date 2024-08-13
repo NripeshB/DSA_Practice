@@ -7,25 +7,20 @@ int Pivot(int arr[], int size){
     int Mid = start + ((end - start)/2) ;
     int Compare = arr[end];
 
-    while(start <= end){
-        if (arr[Mid] < arr[Mid -1] && arr[Mid]< arr[Mid +1])
-        {
-            return arr[Mid];
-            break;
-        }
+    while (start < end) {
+     if(arr[Mid] >= arr[0]){
+        start = Mid + 1;
 
-        if(arr[Mid]< Compare){
-            end = Mid -1 ;
+     }
 
-        }
-        else if (arr[Mid] > Compare){ start = Mid + 1;}
-
-        Mid =  start + ((end - start)/2) ;
-        Compare = arr[end];
-
-        
-        
+     else {
+        end = Mid;
     }
+     Mid = start + ((end - start) / 2);
+    }
+    return start;
+        
+        
 }
 
 int main() {
