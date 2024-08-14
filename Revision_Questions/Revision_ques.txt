@@ -16,5 +16,5 @@ https://bit.ly/31v3Jiy
 
 5. Aggressive cows problem.
 https://bit.ly/3dkuQ2B 
--> requires the maximum condition to be satisfied and then execute the BS.
+-> requires the maximum condition to be satisfied and then execute the BS. (If you don't know sorting, it applies that so look that part up.)
 
