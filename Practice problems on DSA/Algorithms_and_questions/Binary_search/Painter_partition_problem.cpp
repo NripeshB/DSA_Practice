@@ -1,4 +1,4 @@
-
+//This program is quite similar to the book allocation problem.
 #include <iostream>
 #include <vector>
 using namespace std;
