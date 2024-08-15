@@ -21,7 +21,7 @@ bool isPossible(vector<int>& rank, int m, int mid) {
         if (totalDishes >= m) return true;
     }
     
-    return totalDishes >= m;
+    return true;
 }
 
 int minCookTime(vector<int>& rank, int m) {
