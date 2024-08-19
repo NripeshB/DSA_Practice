@@ -16,19 +16,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1 rem ;
-    flex-wrap: wrap;
+    padding: 1rem  2rem; /* Adjusted padding for better spacing */
 }
 
 .logo {
     color: white;
-    padding-left: 5 rem;
-    font-size: 1.5 rem;
-    transform: translateX(20px) ;
+    font-size: 1.5rem;
 }
 
 .dropdown {
-    
     position: relative;
     display: inline-block;
 }
@@ -36,7 +32,7 @@ nav {
 .dropbtn {
     background-color: black;
     color: white;
-    padding: 16px;
+    padding: 0.5rem 1rem; /* Adjusted padding for consistency */
     font-size: large;
     border: none;
     cursor: pointer;
@@ -50,7 +46,8 @@ nav {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
-    
+    top: 100%; /* Aligns the dropdown content below the button */
+    left: 0;   /* Aligns the dropdown content to the left of the button */
 }
 
 .dropdown_content a {
