@@ -70,3 +70,41 @@ nav {
     background-color: #ddd;
     color: black;
 }
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.I{ 
+    margin-top: 2rem ; 
+}
+
+.Donate:hover{
+    margin-top: 2rem ;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.968);
+    border-style: none;
+    padding: 1em 1em; 
+    color: white;
+    background-color: black;
+}
+
+.Donate {
+    margin-top: 2rem ;
+    padding: 1em 1em; 
+    color: black;
+    background-color: white;
+}
+
+
+section p{
+    text-align: center;
+    text-wrap: balance;
+    position: absolute;
+    top: 250px;
+    width: 70vw;
+    margin: 2rem 4rem 1rem 4rem;
+}
