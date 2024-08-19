@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <cstring>
 using namespace std;
 const double pi = std::acos(-1);
 
