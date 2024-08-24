@@ -3,22 +3,71 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+.bg {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 70%,
+      rgb(0, 7, 30) 100%
+    ),
+    radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 7, 30, 0.466) 100%),
+    url(https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg);
+
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 30px 20px 30px;
-  padding: 10px;
+  padding: 20px 40px;
+  color: rgba(255, 255, 255, 0.861);
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.one:hover,
+.two:hover,
+.three:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 15px;
+  font-size: 15px;
 }
 
 .center {
   display: flex;
   align-items: center;
-  gap: 6px;
+  font-weight: 600;
+  gap: 15px;
+  font-size: 15px;
 }
 
+.account:hover {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 6px;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .account {
   display: flex;
   align-items: center;
+  font-weight: 500;
   gap: 6px;
+  font-size: 15px;
 }
