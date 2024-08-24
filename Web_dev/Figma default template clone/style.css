@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .rest {
   height: 220vh;
   width: 100vw;
@@ -130,12 +133,17 @@ nav {
   padding-bottom: 30px;
 }
 
+.scroll:hover {
+  text-decoration: underline;
+}
+
 .scroll {
   display: flex;
   width: 100px;
 
   justify-content: space-between;
 }
+
 .Mountains {
   margin: 30;
   font-size: 70px;
