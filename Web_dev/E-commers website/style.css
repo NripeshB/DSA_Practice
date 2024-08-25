@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-screens {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 1rem 2rem;
+  cursor: default;
+}
+
+.more > .inspirations:hover,
+.more > .products:hover,
+.more > .rooms:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.more {
+  display: flex;
+  gap: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 1.8rem;
+}
+
+.look {
+  border: none;
+  outline: none;
+  width: 30vw;
+  padding-left: 6px;
+}
+
+.search {
+  display: flex;
+  padding-left: 4px;
+  border: 1px solid rgba(125, 93, 45, 0.2);
+  align-items: center;
+  height: 30px;
+  margin: 1.8rem;
+  border-radius: 4px;
+}
+
+.pfp {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+
+.right {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  gap: 16px;
+}
+
+.fa-solid {
+  padding: 4px;
+}
+.fa-solid:hover {
+  padding: 4px;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1043px) {
+  .right {
+    display: none;
+  }
+
+  .look {
+    width: 16vw;
+  }
+}
+
+@media (max-width: 665px) {
+  .more {
+    display: none;
+  }
+
+  .search {
+    width: 60vw;
+    margin: 1.2rem;
+  }
+  .mobile-screens {
+    display: inline;
+    position: relative;
+    margin: 1.3rem;
+  }
+  .mobile-screens > .dropdown-opt {
+    display: none;
+  }
+}
