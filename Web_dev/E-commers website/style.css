@@ -12,6 +12,7 @@
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(232, 180, 113, 0.326);
 }
 
 .logo {
@@ -41,12 +42,14 @@ nav {
   border: none;
   outline: none;
   width: 30vw;
+  background-color: white;
   padding-left: 6px;
 }
 
 .search {
   display: flex;
   padding-left: 4px;
+  background-color: white;
   border: 1px solid rgba(125, 93, 45, 0.2);
   align-items: center;
   height: 30px;
@@ -101,5 +104,132 @@ nav {
   }
   .mobile-screens > .dropdown-opt {
     display: none;
+  }
+}
+
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  background-image: url(https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blured {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: flex-start;
+}
+
+.contain-one {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.778);
+  height: 40vh;
+  width: 40vw;
+}
+
+.contain-one > h1 {
+  font-family: "PT Sans", sans-serif;
+  text-wrap: balance;
+  font-size: 35px;
+}
+
+.contain-one > p {
+  padding: 10px 0px;
+  font-family: "PT Sans", sans-serif;
+  text-wrap: balance;
+  text-align: left;
+}
+
+.contain-one > button:hover {
+  background-color: rgb(224, 145, 96);
+}
+.contain-one > button {
+  margin: auto;
+  border: none;
+  background-color: rgb(221, 160, 122);
+  padding: 8px 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.contain-two {
+  align-self: flex-end;
+}
+
+.contain-two {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.778);
+  height: 20vh;
+  width: min(30vw, 180px);
+}
+
+.contain-two > h2 {
+  font-family: "PT Sans", sans-serif;
+  text-wrap: balance;
+  font-size: 30px;
+}
+.contain-two > h3 {
+  font-family: "PT Sans", sans-serif;
+  text-wrap: balance;
+  font-size: 20px;
+}
+
+.contain-two > p {
+  padding: 10px 0px;
+  font-family: "PT Sans", sans-serif;
+  text-wrap: balance;
+  text-align: left;
+}
+@media (max-width: 1088px) {
+  .contain-one > h1 {
+    font-size: 25px;
+  }
+  .contain-two > h2 {
+    font-size: 18px;
+  }
+  .contain-two > h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contain-two > h3 {
+    font-size: 15px;
+  }
+
+  .contain-one > h1 {
+    font-size: 20px;
+  }
+
+  .contain-one > p {
+    font-size: 12px;
+  }
+  .contain-one > button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  .contain-two > h3 {
+    font-size: 12px;
+  }
+
+  .contain-one > h1 {
+    font-size: 20px;
   }
 }
