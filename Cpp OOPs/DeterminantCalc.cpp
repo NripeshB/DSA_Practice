@@ -2,23 +2,23 @@
     Determinant Calculator
 
     Description:
-    This program calculates the determinant of a square matrix of user-defined size. 
-    The user is prompted to enter the size of the matrix and the matrix elements. 
-    The program supports matrices of any size, but it's primarily demonstrated with 
-    \(4 \times 4\) matrices. 
+    This program calculates the determinant of a square matrix of user-defined size.
+    The user is prompted to enter the size of the matrix and the matrix elements.
+    The program supports matrices of any size, but it's primarily demonstrated with
+    \(4 \times 4\) matrices.
 
     Features:
     - Dynamic memory allocation for creating and managing a 2D matrix.
     - Recursive algorithm for computing the determinant of the matrix.
     - Memory cleanup to prevent memory leaks.
-    
+
     Usage:
     1. Run the program.
     2. Enter the size of the matrix when prompted (e.g., 4 for a \(4 \times 4\) matrix).
     3. Enter the elements of the matrix row by row.
     4. The program will output the determinant of the matrix.
 
-    This program is a practical implementation of determinant calculation, utilizing 
+    This program is a practical implementation of determinant calculation, utilizing
     recursion and dynamic memory management in C++.
 
 */
@@ -32,11 +32,10 @@ public:
     int x, y;
     int **arr;
 
-    
     Determinant() : x(0), y(0), arr(nullptr)
     {
     }
-    
+
     ~Determinant()
     {
         for (int i = 0; i < x; ++i)
@@ -57,15 +56,13 @@ public:
     int **Create_A_Determinant()
     {
 
-        
         arr = new int *[x];
-        
+
         for (int i = 0; i < x; ++i)
         {
             arr[i] = new int[y];
         }
 
-        
         for (int i = 0; i < x; i++)
         {
             cout << endl;
@@ -120,7 +117,7 @@ public:
 
             det += (i % 2 == 0 ? 1 : -1) * temp * solve_Determinant(submatrix, size - 1);
         }
-        
+
         for (int i = 0; i < size - 1; ++i)
         {
             delete[] submatrix[i];
