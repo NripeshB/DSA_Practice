@@ -98,3 +98,25 @@ nav {
 .fa-plus {
   margin-right: 20px;
 }
+
+.sign:hover {
+  color: #ffffff;
+}
+.sign {
+  color: #c9c9c9;
+  padding: 10px;
+  border: none;
+  background-color: #0a0a0a00;
+}
+
+.log:hover {
+  background-color: rgb(219, 219, 219);
+}
+.log {
+  color: #000000;
+  padding: 10px 25px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: none;
+  background-color: white;
+}
