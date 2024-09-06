@@ -57,3 +57,44 @@ nav {
   width: 25vw;
   height: 98vh;
 }
+.search {
+  width: max(300px, 40vw);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.fa-house {
+  margin-left: 30px;
+  padding: 10px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 100%;
+}
+.left-nav {
+  height: 10vh;
+
+  background-color: rgb(32, 32, 32);
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftleft {
+  margin-left: 20px;
+  gap: 10px;
+  display: flex;
+}
+.fa-plus {
+  color: rgb(169, 169, 169);
+}
+.fa-record-vinyl {
+  font-size: 20px;
+  color: rgb(169, 169, 169);
+}
+.lib {
+  color: rgb(169, 169, 169);
+}
+
+.fa-plus {
+  margin-right: 20px;
+}
