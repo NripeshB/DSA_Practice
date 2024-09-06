@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+
+.fa-solid {
+  color: white;
+}
+.fa-spotify {
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+}
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  justify-items: center;
+}
+
+.right {
+  margin: 3px;
+  margin-top: 0px;
+  background-image: linear-gradient(180deg, #2d2d2d 0%, #0a0a0a 65%);
+
+  height: 80vh;
+  width: 73vw;
+  border-radius: 7px;
+}
+.search-bar {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.fa-magnifying-glass {
+  color: rgb(101, 101, 101);
+}
+.thingie {
+  border-radius: 30px;
+  gap: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+}
+.left {
+  margin: 3px;
+  margin-top: 0px;
+  background-color: #1b1b1b;
+  width: 25vw;
+  height: 98vh;
+}
