@@ -90,6 +90,10 @@ nav {
 }
 
 .left-songs {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   height: auto;
   border-radius: 7px;
@@ -250,4 +254,24 @@ nav {
   bottom: 65px;
   right: 40px;
   opacity: 1;
+}
+.songs {
+  margin-top: 3px;
+  border-radius: 7px;
+  background-color: #0f0f0f;
+}
+
+.songs > ul {
+  padding-top: 3px;
+  padding-bottom: 10px;
+  color: #c9c9c9;
+}
+
+.songs > ul > li {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #1e1a1ae8;
+  list-style: none;
+  padding: 20px;
+  margin: 5px;
 }
