@@ -95,6 +95,9 @@ nav {
   justify-content: space-between;
 }
 
+.left {
+  overflow-y: auto;
+}
 .left-songs {
   width: 100%;
   gap: 10px;
@@ -339,4 +342,10 @@ nav {
   width: 70vw;
   border: 2px solid white;
   border-radius: 2px;
+}
+
+/* Define a border style for the active list item */
+.active {
+  border: 2px solid rgba(0, 113, 11, 0.579);
+  padding: 5px;
 }
