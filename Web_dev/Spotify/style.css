@@ -127,8 +127,8 @@ nav {
   background-color: #0a0a0a00;
 }
 .right::-webkit-scrollbar {
-  width: 12px; /* Scrollbar width */
-  height: 12px; /* Scrollbar height for horizontal scroller */
+  width: 10px; /* Scrollbar width */
+  height: 10px; /* Scrollbar height for horizontal scroller */
 }
 
 .right::-webkit-scrollbar-track {
