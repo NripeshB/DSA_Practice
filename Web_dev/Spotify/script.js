@@ -20,12 +20,12 @@ document.querySelectorAll(".song").forEach(item => {
     });
 });
 
-
-document.querySelectorAll(".Creators .fa-play").forEach(playIcon => {
-    playIcon.addEventListener('click', function() {
+document.querySelectorAll(" .fa-play").forEach(Item => {
+    Item.addEventListener('click', function() {
         const songSrc = this.getAttribute('data-src'); 
         if (songSrc) {
             playSong(document.querySelector(`.song[data-src="${songSrc}"]`), songSrc);
         }
     });
 });
+
