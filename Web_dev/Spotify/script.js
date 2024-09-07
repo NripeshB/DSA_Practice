@@ -1,58 +1,32 @@
 const audioPlayer = document.getElementById("audioPlayer");
 
+// Function to play the song and update active class
 function playSong(lielement, songsrc) {
-    document.querySelectorAll("li").forEach(li => li.classList.remove("active")); // Corrected classList
+    document.querySelectorAll(".song").forEach(li => li.classList.remove("active")); // Remove active class from all songs
 
-    lielement.classList.add("active");
+    lielement.classList.add("active"); // Add active class to the clicked song
     audioPlayer.src = songsrc;
     audioPlayer.play();
 
     audioPlayer.onended = function() {
-        lielement.classList.remove('active'); // Corrected 'liElement' to 'lielement'
+        lielement.classList.remove('active'); // Remove active class when the song ends
     };
 }
 
-// Event listeners for each song
-document.getElementById("song1").addEventListener('click', function() {
-    playSong(this, 'Songs/ Last Paradise.mp3');
+// Select all elements with the class 'song' and set up event listeners
+document.querySelectorAll(".song").forEach(item => {
+    item.addEventListener('click', function() {
+        const songSrc = this.getAttribute('data-src'); // Get song source from data attribute
+        playSong(this, songSrc);
+    });
 });
 
-document.getElementById("song2").addEventListener('click', function() {
-    playSong(this, 'Songs/ Your Gonna Miss Me.mp3');
-});
-
-document.getElementById("song3").addEventListener('click', function() {
-    playSong(this, 'Songs/Fragile.mp3');
-});
-
-document.getElementById("song4").addEventListener('click', function() {
-    playSong(this, "Songs/GUV'NOR .mp3");
-});
-
-document.getElementById("song5").addEventListener('click', function() {
-    playSong(this, 'Songs/Hurrican Dorothy.mp3');
-});
-
-document.getElementById("song6").addEventListener('click', function() {
-    playSong(this, 'Songs/Kiwi .mp3');
-});
-
-document.getElementById("song7").addEventListener('click', function() {
-    playSong(this, "Songs/Libet's Delay.mp3");
-});
-
-document.getElementById("song8").addEventListener('click', function() {
-    playSong(this, 'Songs/Mayonaka No Door.mp3'); // Fixed 'aplaySong' to 'playSong'
-});
-
-document.getElementById("song9").addEventListener('click', function() {
-    playSong(this, 'Songs/New Person, Same Old Mistakes .mp3');
-});
-
-document.getElementById("song10").addEventListener('click', function() {
-    playSong(this, 'Songs/Will He.mp3');
-});
-
-document.getElementById("song11").addEventListener('click', function() {
-    playSong(this, 'Songs/Important Podcast.mp3');
+// Select all 'i' elements within .items and set up event listeners
+document.querySelectorAll(".Creators .fa-play").forEach(playIcon => {
+    playIcon.addEventListener('click', function() {
+        const songSrc = this.getAttribute('data-src'); // Get song source from data attribute
+        if (songSrc) {
+            playSong(document.querySelector(`.song[data-src="${songSrc}"]`), songSrc);
+        }
+    });
 });
