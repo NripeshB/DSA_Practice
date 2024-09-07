@@ -1,3 +1,18 @@
+document.querySelectorAll(".player").forEach(i => {
+    i.addEventListener("click", function(){
+        const playIcon = this.querySelector("#play");
+        
+        if (playIcon.classList.contains("fa-play")) {
+            playIcon.classList.remove("fa-play");
+            playIcon.classList.add("fa-pause");
+            audioPlayer.play();
+        } else {
+            playIcon.classList.remove("fa-pause");
+            playIcon.classList.add("fa-play");
+            audioPlayer.pause();
+        }
+    });
+});
 const audioPlayer = document.getElementById("audioPlayer");
 
 function playSong(lielement, songsrc) {
@@ -6,6 +21,13 @@ function playSong(lielement, songsrc) {
     lielement.classList.add("active"); 
     audioPlayer.src = songsrc;
     audioPlayer.play();
+    const player = document.querySelector(".player");
+    if (player) {
+        const playIcon = player.querySelector("#play");
+        playIcon.classList.remove("fa-play");
+        playIcon.classList.add("fa-pause");
+    }
+
 
     audioPlayer.onended = function() {
         lielement.classList.remove('active');
@@ -29,16 +51,3 @@ document.querySelectorAll(" .fa-play").forEach(Item => {
     });
 });
 
-document.querySelectorAll(".player").forEach(i => {
-    i.addEventListener("click", function(){
-        const playIcon = this.querySelector(".play");
-        
-        if (playIcon.classList.contains("fa-play")) {
-            playIcon.classList.remove("fa-play");
-            playIcon.classList.add("fa-pause");
-        } else {
-            playIcon.classList.remove("fa-pause");
-            playIcon.classList.add("fa-play");
-        }
-    });
-});
