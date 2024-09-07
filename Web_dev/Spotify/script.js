@@ -29,3 +29,16 @@ document.querySelectorAll(" .fa-play").forEach(Item => {
     });
 });
 
+document.querySelectorAll(".player").forEach(i => {
+    i.addEventListener("click", function(){
+        const playIcon = this.querySelector(".play");
+        
+        if (playIcon.classList.contains("fa-play")) {
+            playIcon.classList.remove("fa-play");
+            playIcon.classList.add("fa-pause");
+        } else {
+            playIcon.classList.remove("fa-pause");
+            playIcon.classList.add("fa-play");
+        }
+    });
+});
