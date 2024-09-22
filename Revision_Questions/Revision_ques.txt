@@ -1,10 +1,10 @@
-1. First and Last occurance in an sorted array.
+1. First and Last occurrence in a sorted array.
 https://bit.ly/3Ioexjh 
--> use binary search to cut right portion, then left for first and last occurances.
+-> use binary search to cut right portion, then left for first and last occurrences.
 
 2. Peak in a mountain array.
 https://leetcode.com/problems/peak-index-in-a-mountain-array/
--> uses binary search. Try to code it with using the only two conditional statments.
+-> uses binary search. Try to code it with using the only two conditional statements.
 
 3. Search in a rotated and sorted array.
 https://bit.ly/3rEVSK7
@@ -18,3 +18,10 @@ https://bit.ly/31v3Jiy
 https://bit.ly/3dkuQ2B 
 -> requires the maximum condition to be satisfied and then execute the BS. (If you don't know sorting, it applies that so look that part up.)
 
+6. Sum Two numbers of an array.
+https://bit.ly/3DXfsDZ
+-> requires summing up using carry number separately. Use double pointer approach
+
+7. Deleting the substring inside of the string.
+https://leetcode.com/problems/remove-all-occurrences-of-a-substring/
+-> requires to know about the stl for string, find method and erase method.
