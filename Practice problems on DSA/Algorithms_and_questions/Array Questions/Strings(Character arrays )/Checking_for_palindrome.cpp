@@ -1,4 +1,5 @@
 // https://bit.ly/3E55FvF
+// also the same question :https://leetcode.com/problems/valid-palindrome/submissions/1398449604/
 #include <iostream>
 
 using namespace std;
