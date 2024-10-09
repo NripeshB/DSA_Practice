@@ -67,13 +67,3 @@ public:
         return 0;
     }
 };
-
-int main()
-{
-    Solution sol;
-    string s1 = "ab";
-    string s2 = "eidbaooo";
-    bool result = sol.checkInclusion(s1, s2);
-    cout << (result ? "True" : "False") << endl;
-    return 0;
-}
