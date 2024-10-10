@@ -25,3 +25,7 @@ https://bit.ly/3DXfsDZ
 7. Deleting the substring inside of the string.
 https://leetcode.com/problems/remove-all-occurrences-of-a-substring/
 -> requires to know about the stl for string, find method and erase method.
+
+8. Permutation of a substring inside a string.
+https://leetcode.com/problems/permutation-in-string/
+-> Create a counter for each letter stored in an array to apply the logic.
