@@ -29,3 +29,7 @@ https://leetcode.com/problems/remove-all-occurrences-of-a-substring/
 8. Permutation of a substring inside a string.
 https://leetcode.com/problems/permutation-in-string/
 -> Create a counter for each letter stored in an array to apply the logic.
+
+9. Printing the 2D array in a spiral pattern.
+https://leetcode.com/problems/spiral-matrix/
+->Keep the upper and lower bounds for the matrix, and update it when the for loop reaches the respective ends.
