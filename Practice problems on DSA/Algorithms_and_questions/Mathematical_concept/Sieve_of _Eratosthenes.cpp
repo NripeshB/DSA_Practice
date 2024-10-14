@@ -7,21 +7,30 @@ class Solution
 public:
     int countPrimes(int n)
     {
-        vector<bool> prime(n + 1, true);
-        int count = 0;
-        prime[0] = prime[1] = false;
+        int prime[n + 1];
+        int cnt = 0;
         for (int i = 2; i < n; i++)
         {
-            if (prime[i])
+            prime[i] = 1;
+        }
+        for (int i = 2; i <= sqrt(n); i++)
+        {
+            if (prime[i] == 1)
             {
-                count++;
-                for (int j = i * i; j < n; j += i)
+                for (int j = i * i; j <= n; j += i)
                 {
-                    prime[j] = false;
+                    prime[j] = 0;
                 }
             }
         }
-        return count;
+        for (int i = 2; i <= n; i++)
+        {
+            if (prime[i] == 1)
+            {
+                cnt++;
+            }
+        }
+        return cnt;
     }
 };
 
