@@ -24,3 +24,7 @@ public:
         return count;
     }
 };
+
+// time complexity for this program is
+// O(n) = n * log(logn)
+// as it can be expressed as n* (1/2 + 1/3 + 1/5 + 1/7 + 1/11 ...)
