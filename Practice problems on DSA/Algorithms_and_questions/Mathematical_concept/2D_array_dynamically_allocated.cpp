@@ -11,6 +11,8 @@ void free_memory(int **arr, int n, int m)
             delete[] arr[j];
         }
     }
+
+    delete[] arr;
 }
 
 int main()
@@ -28,6 +30,14 @@ int main()
         arr[i] = new int[m];
     }
 
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cout << "Enter the " << i << j << "element of the 2D array." << endl;
+            cin >> arr[i][j];
+        }
+    }
     free_memory(arr, n, m);
 
     return 0;
