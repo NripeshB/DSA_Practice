@@ -1,5 +1,6 @@
 #include <iostream>
 #define PI 3.141
+#define AREAREC(l, b) (l * b)
 // defining a macros for the program to use it all throughout the program.
 using namespace std;
 
