@@ -15,6 +15,12 @@ void free_memory(int **arr, int n, int m)
     delete[] arr;
 }
 
+inline int Inlinefunc(int &a, int &b)
+{ // inline function replaces the function statment directly in the lines of code
+    // int& is a method to pass the variables directly and avoid creating a copy of them while passing through a function.
+    return (a > b) ? a : b; // This is a statement for writing the if else statement in one line.
+}
+
 int main()
 {
     int n;
@@ -39,6 +45,12 @@ int main()
         }
     }
     free_memory(arr, n, m);
+
+    int a, b;
+    cin >> a;
+    cin >> b;
+    int Ans = Inlinefunc(a, b);
+    cout << Ans;
 
     return 0;
 }
