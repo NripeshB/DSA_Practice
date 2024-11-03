@@ -37,3 +37,7 @@ https://leetcode.com/problems/spiral-matrix/
 10. Turning a 2d matrix by 90 degrees
 https://leetcode.com/problems/rotate-image/
 ->First transpose it, then reverse each column
+
+11. Returning the power set of a given set.
+https://leetcode.com/problems/subsets/
+->By recursiom. Exclusion and inclusion.
