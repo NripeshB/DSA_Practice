@@ -38,11 +38,12 @@ https://leetcode.com/problems/spiral-matrix/
 https://leetcode.com/problems/rotate-image/
 ->First transpose it, then reverse each column
 
+11. Revise code for Merge and Quick Sort.
 
-11. Returning the power set of a given set.
+12. Returning the power set of a given set.
 https://leetcode.com/problems/subsets/
 ->By recursiom. Exclusion and inclusion.
 
-12. The Keypad problem
+13. The Keypad problem
 https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 ->By recursion. 
