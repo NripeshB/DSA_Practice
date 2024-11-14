@@ -47,3 +47,7 @@ https://leetcode.com/problems/subsets/
 13. The Keypad problem
 https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 ->By recursion. 
+
+14. The permutations problem.
+https://leetcode.com/problems/permutations/
+->By recursion and a loop with backtracking.
