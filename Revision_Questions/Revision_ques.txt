@@ -51,3 +51,7 @@ https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 14. The permutations problem.
 https://leetcode.com/problems/permutations/
 ->By recursion and a loop with backtracking.
+
+15. Rat in a maze.
+https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
+->Handle by backtracking and recursion also try using visited matrix approach instead of the old approach.
