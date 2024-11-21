@@ -31,6 +31,23 @@ void Insert_at_Tail(Node *&tail, int d)
     tail = temp;
 }
 
+void Insert_in_middle(Node *&head, int position, int data)
+{
+
+    Node *temp = head;
+    // count starts at 1 so it grabs the node just before the the position where the new node is to be inserted.
+    int count = 1;
+    while (count < position - 1)
+    {
+        temp = temp->next;
+        count++;
+    }
+
+    Node *nodetoinsert = new Node(data);
+    nodetoinsert->next = temp->next;
+    temp->next = nodetoinsert;
+}
+
 void Print(Node *&head)
 {
     // pointing the temp node at head and then traversing it.
@@ -53,6 +70,7 @@ int main()
     Insert_at_Head(head, 12);
     Insert_at_Tail(tail, 15);
     Insert_at_Tail(tail, 16);
+    Insert_in_middle(head, 3, 100);
     Print(head);
 
     return 0;
