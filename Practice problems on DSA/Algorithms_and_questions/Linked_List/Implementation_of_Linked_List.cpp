@@ -31,7 +31,7 @@ void Insert_at_Tail(Node *&tail, int d)
     tail = temp;
 }
 
-void Insert_in_middle(Node *&head, int position, int data)
+void Insert(Node *&head, Node *&tail, int position, int data)
 {
 
     Node *temp = head;
@@ -41,6 +41,18 @@ void Insert_in_middle(Node *&head, int position, int data)
     {
         temp = temp->next;
         count++;
+    }
+    // if insertion happens at head
+    if (position == 1)
+    {
+        Insert_at_Head(head, data);
+        return;
+    }
+    // if insertion happens at tail;
+    if (temp->next == NULL)
+    {
+        Insert_at_Tail(tail, data);
+        return;
     }
 
     Node *nodetoinsert = new Node(data);
@@ -70,7 +82,7 @@ int main()
     Insert_at_Head(head, 12);
     Insert_at_Tail(tail, 15);
     Insert_at_Tail(tail, 16);
-    Insert_in_middle(head, 3, 100);
+    Insert(head, tail, 5, 100);
     Print(head);
 
     return 0;
