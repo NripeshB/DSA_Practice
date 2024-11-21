@@ -23,6 +23,13 @@ void Insert_at_Head(Node *&head, int d)
     temp->next = head;
     head = temp;
 }
+void Insert_at_Tail(Node *&tail, int d)
+{
+    // creating a temp node which saves the address fort he prev head and takes up the head title.
+    Node *temp = new Node(d);
+    tail->next = temp;
+    tail = temp;
+}
 
 void Print(Node *&head)
 {
@@ -42,8 +49,11 @@ int main()
     cout << Node1->next << endl;
     // creating a head for the first node.
     Node *head = Node1;
-    Insert_at_Head(Node1, 12);
-    Print(Node1);
+    Node *tail = Node1;
+    Insert_at_Head(head, 12);
+    Insert_at_Tail(tail, 15);
+    Insert_at_Tail(tail, 16);
+    Print(head);
 
     return 0;
 }
