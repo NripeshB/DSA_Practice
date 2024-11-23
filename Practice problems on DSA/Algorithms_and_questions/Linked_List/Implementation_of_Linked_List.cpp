@@ -15,6 +15,13 @@ public:
         this->data = data;
         this->next = NULL;
     }
+
+    ~Node(){
+        if(this->next != NULL){
+            delete next;
+            this-> next = NULL;
+        }
+    }
 };
 void Insert_at_Head(Node *&head, int d)
 {
@@ -60,6 +67,30 @@ void Insert(Node *&head, Node *&tail, int position, int data)
     temp->next = nodetoinsert;
 }
 
+void DeleteNode(int position, Node*&head ){
+    if (position==1)
+    {
+        Node*temp = head;
+        head = head->next;
+        //freeing the memory for the previously made head
+        temp -> next = NULL;
+        delete temp;
+    }
+    else{
+        Node*curr = head;
+        Node*prev = NULL;
+        int count = 1;
+        while(count< position){
+            prev = curr;
+            curr = curr->next;
+
+        }
+
+        prev -> next = curr -> next;
+        curr -> next = NULL;
+        delete curr;
+    }
+}
 void Print(Node *&head)
 {
     // pointing the temp node at head and then traversing it.
@@ -85,5 +116,8 @@ int main()
     Insert(head, tail, 5, 100);
     Print(head);
 
+
+
+    delete head;
     return 0;
 }
