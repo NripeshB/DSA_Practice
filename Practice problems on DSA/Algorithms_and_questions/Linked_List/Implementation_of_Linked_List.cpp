@@ -117,7 +117,7 @@ int main()
     Print(head);
 
 
-
+//this starts a chain reaction by calling the destructor and deleting the entire linked list
     delete head;
     return 0;
 }
