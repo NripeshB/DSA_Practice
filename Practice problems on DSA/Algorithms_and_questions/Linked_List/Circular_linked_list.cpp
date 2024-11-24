@@ -54,12 +54,39 @@ void print(Node*tail){
     cout<<endl;
 }
 
+void deletenode(Node*&tail, int element){
+    if (tail == NULL){
+        cout<<"List is empty."<<endl;
+    }
+    else{
+        Node*prev = tail;
+        Node*curr = prev->next ;
+
+        while(curr->data != element ){
+            prev = curr;
+            curr = curr->next;
+        }
+        prev -> next = curr-> next;
+        if(tail == curr){
+            tail = prev;
+        }
+        curr -> next = NULL;
+
+        delete curr;
+    }
+    
+   
+    
+}
+
 int main() {
     Node*tail = NULL;
     Insert(tail, 5, 3);
     Insert(tail, 3, 4);
     Insert(tail, 4, 5);
     Insert(tail, 5, 6);
+    print(tail);
+    deletenode(tail, 4);
     print(tail);
     return 0;
 }
