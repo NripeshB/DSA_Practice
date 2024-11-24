@@ -70,9 +70,9 @@ int main() {
     Node*head = node1;
     Node*tail = node1;
     Insert(head, tail, 1, 1);
-    Insert(head, tail, 1, 2);
-    Insert(head, tail, 3, 5);
-    Insert(head, tail, 1, 3);
+    Insert(head, tail, 3  , 2);
+    Insert(head, tail, 4  , 100);
+  
 
     print(head);
     return 0;
