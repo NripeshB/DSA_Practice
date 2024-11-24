@@ -26,6 +26,34 @@ temp->prev = tail;
 tail->next = temp;
 tail = temp;
 }
+void Insert(Node*&head, Node*&tail, int position,int data){
+    if(position==1){
+        Insert_at_head(head, data);
+    }
+    Node*temp = head;
+    Node*insert= new Node(data);
+    int count =1;
+    while (count< position-1)
+    {
+        temp = temp->next;
+        count++;
+    }
+    if(temp->next ==NULL){
+        Insert_at_tail(tail, data);
+        return;
+    }
+
+    Node*nodetoinsert = new Node(data);
+    nodetoinsert->next = temp->next;
+    temp->next->prev = nodetoinsert;
+    temp->next = nodetoinsert;
+    nodetoinsert->prev = temp;
+
+    
+    
+    
+    
+}
 //treversing the doubly linked list
 void print(Node*head){
     Node* temp = head;
