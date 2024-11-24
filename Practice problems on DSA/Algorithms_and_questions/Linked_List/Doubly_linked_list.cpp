@@ -29,6 +29,7 @@ tail = temp;
 void Insert(Node*&head, Node*&tail, int position,int data){
     if(position==1){
         Insert_at_head(head, data);
+        return;
     }
     Node*temp = head;
     Node*insert= new Node(data);
@@ -68,8 +69,11 @@ int main() {
     Node* node1 = new Node(10);
     Node*head = node1;
     Node*tail = node1;
-    Insert_at_head(head, 11);
-    Insert_at_tail(tail, 9);
+    Insert(head, tail, 1, 1);
+    Insert(head, tail, 1, 2);
+    Insert(head, tail, 3, 5);
+    Insert(head, tail, 1, 3);
+
     print(head);
     return 0;
 }
