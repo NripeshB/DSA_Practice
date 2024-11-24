@@ -112,5 +112,7 @@ int main() {
     deletenode(head, tail, 4);
 
     print(head);
+
+    delete head;
     return 0;
 }
