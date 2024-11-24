@@ -55,3 +55,7 @@ https://leetcode.com/problems/permutations/
 15. Rat in a maze.
 https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
 ->Handle by backtracking and recursion also try using visited matrix approach instead of the old approach.
+
+16. Reversing the K groups of nodes in LL
+https://leetcode.com/problems/reverse-nodes-in-k-group/
+->Handle using recursion and keep in mind to check if the group of K elements can be formed.
