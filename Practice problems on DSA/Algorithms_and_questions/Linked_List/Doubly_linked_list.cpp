@@ -12,7 +12,15 @@ this->data = d;
 this-> prev = NULL;
 this-> next = NULL;
 }
+~Node(){
+    if(this->next !=NULL){
+        this->prev = NULL;
+        this->next = NULL;
+        delete this->next;
+    }
+}
 };
+
 
 void  Insert_at_head(Node*&head, int data){
 Node*temp = new Node(data);
@@ -50,10 +58,38 @@ void Insert(Node*&head, Node*&tail, int position,int data){
     temp->next = nodetoinsert;
     nodetoinsert->prev = temp;
 
+}
+
+
+void deletenode(Node*&head,Node*&tail, int position){
+    if (position == 1)
+    {
+        Node*temp = head;
+        temp->next->prev = NULL;
+        head = temp->next;
+        temp->next = NULL;
+
+        delete temp; 
+    }
+    else{
+        Node* curr = head;
+        Node* prev = NULL;
+
+        int count = 1;
+        while(count < position){
+            prev = curr;
+            curr = curr->next;
+            count++;
+        }
+
+        curr -> prev = NULL;
+        prev->next = curr->next;
+        curr->next = NULL;
+
+        delete curr;
+    }
     
-    
-    
-    
+
 }
 //treversing the doubly linked list
 void print(Node*head){
@@ -71,8 +107,9 @@ int main() {
     Node*tail = node1;
     Insert(head, tail, 1, 1);
     Insert(head, tail, 3  , 2);
-    Insert(head, tail, 4  , 100);
-  
+    Insert(head, tail, 4  , 100 );
+    print(head);
+    deletenode(head, tail, 4);
 
     print(head);
     return 0;
