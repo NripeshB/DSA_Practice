@@ -42,3 +42,7 @@ public:
 int main() {
     return 0;
 }
+
+//the same code can be used to remove the cycle
+//simply by setting the node that we are returning 
+//to NULL, thus transforming it into a linear linked list.
