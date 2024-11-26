@@ -43,6 +43,9 @@ int main() {
     return 0;
 }
 
-//the same code can be used to remove the cycle
-//simply by setting the node that we are returning 
-//to NULL, thus transforming it into a linear linked list.
+/*to remove the cycle from the given LL, just take the intersection point of the
+from the above code and use it as reference to feed into a while loop
+which has an iterator start from the intersection point and iterate it till
+iterator->next != intersection. When the loop breaks the iterator would lie on
+the node before the intersection and just set iterator->next == NULL, thus 
+removing the cycle from the LL*/
