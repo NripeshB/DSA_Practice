@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//this below is a less efficient method with time complexity of O(n^2), try using sorting (O(nlogn)) or hash maps O(n)
 class Node
     {
     public:
