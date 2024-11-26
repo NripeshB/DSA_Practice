@@ -63,3 +63,7 @@ https://leetcode.com/problems/reverse-nodes-in-k-group/
 17. Hare and tortoise method.
 https://leetcode.com/problems/linked-list-cycle-ii/
 ->Using  a slow and fast pointer on can detect loops and for non looping lists can find the mid of the loop in constant space .
+
+18. Removing Duplicates from an unsorted LL
+https://www.naukri.com/code360/problems/remove-duplicates-from-unsorted-linked-list_1069331?source=youtube&campaign=YouTube_Lovebabbar29thJan&utm_source=youtube&utm_medium=affiliate&utm_campaign=YouTube_Lovebabbar29thJan&leftPanelTabValue=SUBMISSION
+->This has three approaches, n^2, nlogn, and n.
