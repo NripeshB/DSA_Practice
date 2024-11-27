@@ -107,6 +107,16 @@ void Print(Node *&head)
     cout<<endl;
 }
 
+
+
+
+
+
+
+
+
+
+
 Node* kgroup(Node*head, int k){
 
     if (head == NULL)
