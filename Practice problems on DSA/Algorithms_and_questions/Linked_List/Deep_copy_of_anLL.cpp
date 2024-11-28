@@ -19,6 +19,7 @@ public:
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
+        if (!head) return nullptr;
         Node* temp = head;
         while (temp != NULL) {
             Node* copyTemp = new Node(temp->val);
