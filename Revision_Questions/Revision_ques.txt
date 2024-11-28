@@ -67,3 +67,7 @@ https://leetcode.com/problems/linked-list-cycle-ii/
 18. Removing Duplicates from an unsorted LL
 https://www.naukri.com/code360/problems/remove-duplicates-from-unsorted-linked-list_1069331?source=youtube&campaign=YouTube_Lovebabbar29thJan&utm_source=youtube&utm_medium=affiliate&utm_campaign=YouTube_Lovebabbar29thJan&leftPanelTabValue=SUBMISSION
 ->This has three approaches, n^2, nlogn, and n.
+
+19. Deep copy of a Linked List containg random pointers.
+https://leetcode.com/problems/copy-list-with-random-pointer/submissions/1464878381/
+->Make an interleaving pattern and then traverse that to assign the random pointers in a the copied LL.
