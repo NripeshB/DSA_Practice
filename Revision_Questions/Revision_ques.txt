@@ -79,3 +79,7 @@ https://bit.ly/3GsXWsz
 21. Deleting the middle element from a Stack.
 https://bit.ly/3ovTIu2
 -> Use recursion for it and without creating another array or stack to store data.
+
+22. Check  Valid Parenthesis
+https://bit.ly/34kxPaq
+->its easy but companies ask.
