@@ -83,3 +83,7 @@ https://bit.ly/3ovTIu2
 22. Check  Valid Parenthesis
 https://bit.ly/34kxPaq
 ->its easy but companies ask.
+
+23. Minimum bracket reversal
+https://bit.ly/3GAYRr5
+-> Use recursion and remove the valid parenthesis.
