@@ -87,3 +87,7 @@ https://bit.ly/34kxPaq
 23. Minimum bracket reversal
 https://bit.ly/3GAYRr5
 -> Use recursion and remove the valid parenthesis.
+
+24. Next Smallest Element
+https://www.naukri.com/code360/problems/next-smaller-element_1112581?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbarcodestudio&leftPanelTabValue=SUBMISSION
+-> Solve it via stack for O(n) solution rather than O(n^2).
