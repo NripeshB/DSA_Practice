@@ -95,3 +95,7 @@ https://www.naukri.com/code360/problems/next-smaller-element_1112581?topList=lov
 25. Largest area histogram
 https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 ->Solve it using the logic used in 24 and in O(n) time.
+
+26. The celebrity problem
+https://www.naukri.com/code360/problems/the-celebrity-problem_982769?leftPanelTabValue=PROBLEM
+->Solve it using most likely candidate in a stack and eleminating all others.
