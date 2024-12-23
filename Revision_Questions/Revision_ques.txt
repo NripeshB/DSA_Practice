@@ -99,3 +99,7 @@ https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 26. The celebrity problem
 https://www.naukri.com/code360/problems/the-celebrity-problem_982769?leftPanelTabValue=PROBLEM
 ->Solve it using most likely candidate in a stack and eleminating all others.
+
+27. Maximal rectangular Area for 0s and 1s matrix.
+https://leetcode.com/problems/maximal-rectangle/
+->uses logic from 26 and 25. Its hard, so review 25 and 26 before attempting.
