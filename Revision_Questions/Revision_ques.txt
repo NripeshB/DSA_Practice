@@ -107,4 +107,8 @@ https://leetcode.com/problems/maximal-rectangle/
 28.Implementing N stacks in an array.
 https://www.naukri.com/code360/problems/n-stacks-in-an-array_1164271?leftPanelTabValue=SUBMISSION
 ->Create two seperate arrays for top and next. Top storing the respective number of stacks and next
- containing the next element after the respective top element. Have propper initialization for all of these arrays.  
+ containing the next element after the respective top element. Have propper initialization for all of these arrays.
+
+29. Min Stack element at Tc = O(1); SC = O(1)  
+https://www.naukri.com/code360/problems/design-a-stack-that-supports-getmin-in-o-1-time-and-o-1-extra-space_842465?topList=love-babbar-dsa-sheet-problems%3Fsource%3Dyoutube&campaign=Codestudio_Lovebabbar&utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Lovebabbar&leftPanelTabValue=SUBMISSION
+->Uses a specific formula. (2x - min);
