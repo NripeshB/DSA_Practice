@@ -103,3 +103,8 @@ https://www.naukri.com/code360/problems/the-celebrity-problem_982769?leftPanelTa
 27. Maximal rectangular Area for 0s and 1s matrix.
 https://leetcode.com/problems/maximal-rectangle/
 ->uses logic from 26 and 25. Its hard, so review 25 and 26 before attempting.
+
+28.Implementing N stacks in an array.
+https://www.naukri.com/code360/problems/n-stacks-in-an-array_1164271?leftPanelTabValue=SUBMISSION
+->Create two seperate arrays for top and next. Top storing the respective number of stacks and next
+ containing the next element after the respective top element. Have propper initialization for all of these arrays.  
