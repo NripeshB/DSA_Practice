@@ -35,7 +35,61 @@ using namespace std;
 };  */
 
 
+  //And this approach has a TC of 1 and ST also of 1
 
+
+class SpecialStack {
+    stack<int> S;
+    
+    int mini;
+    public:
+        
+    void push(int data) {
+        if(S.empty()){
+            S.push(data);
+            mini = data;
+        }
+        else{
+            if(data<mini){
+                S.push(2*data - mini);
+                mini = data;
+            }
+            else{
+                S.push(data);
+            
+            }
+        }
+    }
+
+    void pop(){
+        int curr = S.top();
+        S.pop();
+        if(curr<mini){
+        mini = 2*mini - curr; 
+               }
+    }
+
+    int top() {
+        if(S.empty()){
+            return -1;
+        }
+
+        int curr = S.top();
+
+        if(curr<mini){
+            return mini;
+        }
+
+        else{
+            return curr;
+        }
+    }
+
+    int getMin() {
+        
+        return mini;
+    }  
+};
 
 
 int main() {
