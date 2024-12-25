@@ -3,7 +3,8 @@
 using namespace std;
 
 
-
+// it is just a circular queue with extra function as pushing from the rear
+//and removal from the back.
 int main() {
     deque<int> dq;
     dq.push_front(12);
