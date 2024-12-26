@@ -1,3 +1,5 @@
+Complete the mathematical questions and simple quesitons.
+
 1. First and Last occurrence in a sorted array.
 https://bit.ly/3Ioexjh 
 -> use binary search to cut right portion, then left for first and last occurrences.
