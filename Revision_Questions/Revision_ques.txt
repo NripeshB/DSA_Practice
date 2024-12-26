@@ -116,3 +116,7 @@ https://www.naukri.com/code360/problems/design-a-stack-that-supports-getmin-in-o
 30. Negative numbers in the first K groups of an array
 https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
 ->Use slinding window and deque to implement it
+
+31. Gas station loop question
+https://leetcode.com/problems/gas-station/description/
+->use a deficit count alongside the balance to skip checking the iterated loop again.
