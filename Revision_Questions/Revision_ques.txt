@@ -129,3 +129,5 @@ https://leetcode.com/problems/gas-station/description/
 33. Min and Max element sum in k length window.
 https://www.naukri.com/code360/problems/sum-of-minimum-and-maximum-elements-of-all-subarrays-of-size-k_1171047?leftPanelTabValue=SUBMISSION
 ->Uses sliding window with a min and max indices. similer to question number 30.
+
+34. Review the Tree Creation and Methods of traversal.
