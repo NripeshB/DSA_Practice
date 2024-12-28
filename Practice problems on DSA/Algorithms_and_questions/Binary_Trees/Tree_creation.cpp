@@ -40,6 +40,7 @@ node* builder(node*root){
 }
 
 
+
 //Implementation of Level Order Traversal.
 void levelOrderTrarsal(node* root){
     queue<node*> q;
@@ -81,11 +82,65 @@ void levelOrderTrarsal(node* root){
 
 }
 
+//Inorder traversal. Follows the LNR traversal
+void Inorder(node*root){
+    if (root == NULL)
+    {
+        return ;
+    }
+//left
+    Inorder(root->left);
+//printing node
+    cout<<root->data<< " ";
+//right
+    Inorder(root->right);
+
+    }
+
+
+//Preorder traversal. Follows the NLR traversal
+void Preorder(node*root){
+    if (root == NULL)
+    {
+        return ;
+    }
+//printing node
+    cout<<root->data<< " ";
+//left
+    Preorder(root->left);
+//right
+    Preorder(root->right);
+
+    }
+    
+
+
+
+//Postorder traversal. Follows the LRN traversal
+void Postorder(node*root){
+    if (root == NULL)
+    {
+        return ;
+    }
+
+//left
+    Postorder(root->left);
+//right
+    Postorder(root->right);
+//printing node
+    cout<<root->data<< " ";
+
+    }
+    
+
 int main() {
     node*A = NULL;
     A = builder(A);
     /* 5 6 8 11 -1 -1 -1 9 -1 10 -1 -1 7 13 -1 -1 22 6 -1 -1 7 -1 -1 
     ----------1    */
     levelOrderTrarsal(A);
+    Inorder(A);
+    Preorder(A);
+    Postorder(A);
     return 0;
 }
