@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 class node{
@@ -38,8 +39,41 @@ node* builder(node*root){
 
 }
 
+
+//Implementation of Level Order Traversal.
+void levelOrderTrarsal(node* root){
+    queue<node*> q;
+    q.push(root);
+
+    while(!q.empty()){
+        node*temp = q.front();
+        cout<<temp->data<< " ";
+        q.pop();
+
+        if(temp->left){
+            q.push(temp->left);
+        }
+
+        if(temp->right){
+            q.push(temp->right);
+        }
+
+        
+
+        
+    }
+    
+
+}
+
 int main() {
-    node*A;
-    builder(A);
+    node*A = NULL;
+    A = builder(A);
+    /* 5
+    6   7 
+    8  9  13  22  
+    11  -1  -1  10  -1  -1  6  7  
+    ----------1    */
+    levelOrderTrarsal(A);
     return 0;
 }
