@@ -44,20 +44,35 @@ node* builder(node*root){
 void levelOrderTrarsal(node* root){
     queue<node*> q;
     q.push(root);
+    q.push(NULL);
 
     while(!q.empty()){
         node*temp = q.front();
-        cout<<temp->data<< " ";
         q.pop();
 
-        if(temp->left){
+
+        if (temp == NULL)
+        {
+            cout<<endl;
+            if (!q.empty())
+            {
+                q.push(NULL);
+            }
+            
+                }
+
+        else{ 
+            cout<<temp->data<< " ";
+            
+            if(temp->left){
             q.push(temp->left);
         }
 
         if(temp->right){
             q.push(temp->right);
         }
-
+}
+       
         
 
         
@@ -69,10 +84,7 @@ void levelOrderTrarsal(node* root){
 int main() {
     node*A = NULL;
     A = builder(A);
-    /* 5
-    6   7 
-    8  9  13  22  
-    11  -1  -1  10  -1  -1  6  7  
+    /* 5 6 8 11 -1 -1 -1 9 -1 10 -1 -1 7 13 -1 -1 22 6 -1 -1 7 -1 -1 
     ----------1    */
     levelOrderTrarsal(A);
     return 0;
