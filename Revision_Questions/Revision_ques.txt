@@ -125,3 +125,7 @@ https://leetcode.com/problems/gas-station/description/
 
 32. Implementation of N queues in an Array.
 ->works on the same logic as implementation of stacks in an array. Do study it before this.
+
+33. Min and Max element sum in k length window.
+https://www.naukri.com/code360/problems/sum-of-minimum-and-maximum-elements-of-all-subarrays-of-size-k_1171047?leftPanelTabValue=SUBMISSION
+->Uses sliding window with a min and max indices. similer to question number 30.
