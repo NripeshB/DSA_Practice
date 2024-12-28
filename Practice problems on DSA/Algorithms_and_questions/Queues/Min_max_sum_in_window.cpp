@@ -1,3 +1,4 @@
+//https://www.naukri.com/code360/problems/sum-of-minimum-and-maximum-elements-of-all-subarrays-of-size-k_1171047?leftPanelTabValue=SUBMISSION
 #include <iostream>
 using namespace std;
 
