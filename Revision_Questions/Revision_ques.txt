@@ -122,3 +122,6 @@ https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of
 31. Gas station loop question
 https://leetcode.com/problems/gas-station/description/
 ->use a deficit count alongside the balance to skip checking the iterated loop again.
+
+32. Implementation of N queues in an Array.
+->works on the same logic as implementation of stacks in an array. Do study it before this.
