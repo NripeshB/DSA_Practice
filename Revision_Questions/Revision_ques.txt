@@ -132,15 +132,15 @@ https://www.naukri.com/code360/problems/sum-of-minimum-and-maximum-elements-of-a
 
 34. Review the Tree Creation and Methods of traversal.
 
-35. Finding the height of the Tree
-https://www.geeksforgeeks.org/problems/height-of-binary-tree/1
-->simple recursive function.
-
-36. Diameter of the binary Tree
+35. Diameter of the binary Tree
 https://leetcode.com/problems/diameter-of-binary-tree/
 ->Calculate the height of the left and right subtree along with the diameter at each depth.
 try implementing it using pair<int,int> to reduce the time complexity to O(n);
 
-37. Balanced Tree
+36. Balanced Tree
 https://leetcode.com/problems/balanced-binary-tree/
 ->Implement it using pair<bool, int> where second pair calculates hieght alongside the code.
+
+37. Sum Tree check
+https://www.geeksforgeeks.org/problems/sum-tree/1
+-> Implement using pair<bool, int> where instead of checking height find the sum for left and right node.
