@@ -1,3 +1,4 @@
+//https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
 #include <iostream>
 using namespace std;
 //the following is for left but for right view the right fucntion would be called first 
