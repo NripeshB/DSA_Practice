@@ -139,3 +139,8 @@ https://www.geeksforgeeks.org/problems/height-of-binary-tree/1
 36. Diameter of the binary Tree
 https://leetcode.com/problems/diameter-of-binary-tree/
 ->Calculate the height of the left and right subtree along with the diameter at each depth.
+try implementing it using pair<int,int> to reduce the time complexity to O(n);
+
+37. Balanced Tree
+https://leetcode.com/problems/balanced-binary-tree/
+->Implement it using pair<bool, int> where second pair calculates hieght alongside the code.
