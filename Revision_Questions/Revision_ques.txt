@@ -147,4 +147,4 @@ https://www.geeksforgeeks.org/problems/sum-tree/1
 
 38. ZigZag traversal In tree
 https://www.geeksforgeeks.org/problems/zigzag-tree-traversal/1?page=2&company%5B%5D=Amazon&category%5B%5D=Tree&sortBy=
-->Implementaion requires level order traversal but with creation of an array which alternates with each level.
+->Implementaion requires level order traversal but with creation of an array which alternates with each level. 
