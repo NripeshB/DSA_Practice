@@ -148,3 +148,7 @@ https://www.geeksforgeeks.org/problems/sum-tree/1
 38. ZigZag traversal In tree
 https://www.geeksforgeeks.org/problems/zigzag-tree-traversal/1?page=2&company%5B%5D=Amazon&category%5B%5D=Tree&sortBy=
 ->Implementaion requires level order traversal but with creation of an array which alternates with each level. 
+
+39. Vertical Traversal of a Binary Tree
+https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
+-> Implementation requires maps and creation of complecated data types. Do revise it thoroughly.
