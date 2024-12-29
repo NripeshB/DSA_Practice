@@ -3,39 +3,53 @@
 using namespace std;
 
 
-  struct TreeNode {
-     int val;
-    TreeNode *left;
-     TreeNode *right;
-     TreeNode() : val(0), left(nullptr), right(nullptr) {}
-     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  struct Node {
+     int data;
+    Node *left;
+     Node *right;
   };
  
 class Solution {
-
-public:
-    // Helper function to calculate the height of the tree and update the diameter.
-    int maxHeight(TreeNode* node, int& diameter) {
-        if (node == nullptr) {
-            return 0; // Base case: height of an empty tree is 0
+  private:
+    int height(struct Node* node){
+        //base case
+        if(node == NULL) {
+            return 0;
         }
-
-        // Recursively calculate the height of the left and right subtrees
-        int leftHeight = maxHeight(node->left, diameter);
-        int rightHeight = maxHeight(node->right, diameter);
-
-        // Update the diameter: it's the maximum of the current diameter and the path passing through this node
-        diameter = max(diameter, leftHeight + rightHeight);
-
-        // Return the height of the current subtree
-        return 1 + max(leftHeight, rightHeight);
+        
+        int left = height(node ->left);
+        int right = height(node->right);
+        
+        int ans = max(left, right) + 1;
+        return ans;
     }
+  public:
+    // Function to return the diameter of a Binary Tree.
+    
+    pair<int,int> diameterFast(Node* root) {
+        //base case
+        if(root == NULL) {
+            pair<int,int> p = make_pair(0,0);
+            return p;
+        }
+        
+        pair<int,int> left = diameterFast(root->left);
+        pair<int,int> right = diameterFast(root->right);
+        
+        int op1 = left.first;
+        int op2 = right.first;
+        int op3 = left.second + right.second + 1;
+        
+        pair<int,int> ans;
+        ans.first = max(op1, max(op2, op3));;
+        ans.second = max(left.second , right.second) + 1;
 
-    int diameterOfBinaryTree(TreeNode* root) {
-        int diameter = 0; // Initialize diameter
-        maxHeight(root, diameter); // Call helper function
-        return diameter; // Return the final diameter
+        return ans;
+    }
+    int diameter(Node* root) {
+    
+        return diameterFast(root).first;
+        
     }
 };
 
