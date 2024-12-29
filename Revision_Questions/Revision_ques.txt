@@ -156,3 +156,7 @@ https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
 40. Least common ancestor.
 https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
 ->try using recursion and normal method.
+
+41. Valid Path with some K.
+https://www.geeksforgeeks.org/problems/k-sum-paths/1
+-> Uses backtracking. Have the loop for the array traversal start from behind to measure sum from the leaf to the root.
