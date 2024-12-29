@@ -152,3 +152,7 @@ https://www.geeksforgeeks.org/problems/zigzag-tree-traversal/1?page=2&company%5B
 39. Vertical Traversal of a Binary Tree
 https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
 -> Implementation requires maps and creation of complecated data types. Do revise it thoroughly.
+
+40. Least common ancestor.
+https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
+->try using recursion and normal method.
