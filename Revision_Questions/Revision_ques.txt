@@ -135,3 +135,7 @@ https://www.naukri.com/code360/problems/sum-of-minimum-and-maximum-elements-of-a
 35. Finding the height of the Tree
 https://www.geeksforgeeks.org/problems/height-of-binary-tree/1
 ->simple recursive function.
+
+36. Diameter of the binary Tree
+https://leetcode.com/problems/diameter-of-binary-tree/
+->Calculate the height of the left and right subtree along with the diameter at each depth.
