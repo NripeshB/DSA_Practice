@@ -131,3 +131,7 @@ https://www.naukri.com/code360/problems/sum-of-minimum-and-maximum-elements-of-a
 ->Uses sliding window with a min and max indices. similer to question number 30.
 
 34. Review the Tree Creation and Methods of traversal.
+
+35. Finding the height of the Tree
+https://www.geeksforgeeks.org/problems/height-of-binary-tree/1
+->simple recursive function.
