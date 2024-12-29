@@ -76,7 +76,7 @@ void levelOrderTraversal(node* root){
     }
 }
 
-//Implementation of Level Order Traversal.
+//Implementation of Level Order traversal creation of the tree.
 void levelOrderCreator(node*& root){
     queue<node*> q;
     cout<<"enter data: "<<endl;
