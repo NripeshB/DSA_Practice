@@ -175,4 +175,6 @@ https://www.geeksforgeeks.org/problems/burning-tree/1
 -> Has two approaches. Recursive and Level order. Create a mapping for parents and function to find the target 
 element. Then track time to burn the tree.
 
-45. Morris Traversal for Inorder
+45. Morris Traversal for Inorder. Flattening a tree.
+https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1
+-> Use morris traversal to solve it.
