@@ -160,3 +160,7 @@ https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
 41. Valid Path with some K.
 https://www.geeksforgeeks.org/problems/k-sum-paths/1
 -> Uses backtracking. Have the loop for the array traversal start from behind to measure sum from the leaf to the root.
+
+42. Highest sum of non adjacent nodes
+https://www.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1
+->Use the inclusion and exclusion principle. 
