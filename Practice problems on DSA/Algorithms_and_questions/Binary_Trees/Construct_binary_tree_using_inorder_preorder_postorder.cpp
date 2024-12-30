@@ -1,6 +1,4 @@
-#include <iostream>
-using namespace std;
-
+#include <map>
 #include <iostream>
 using namespace std;
 
@@ -22,39 +20,35 @@ struct Node {
 
 class Solution {
   public:
-  int findIndex(int n, vector<int>&in, int size){
+  void findIndex(vector<int>in ,map<int,int>&Inordermap, int size){
       for(int i= 0; i<size; i++){
-          if(in[i] == n){
-              return i;
-          }
+          Inordermap[in[i]] = i;
       }
-      return -1;
+     
   }
-  Node* solve(vector<int> &in, vector<int> &pre ,int indexstart, int indexend, int& ind, int size){
+  Node* solve(vector<int> &in, vector<int> &pre ,int indexstart, int indexend, int& ind, int size, map<int, int>& Inordermap){
       if(ind >= size || indexstart> indexend){
           return NULL;
       }
       
       int element = pre[ind++];
       Node* root = new Node(element);
-      int position = findIndex(element, in, size);
+      int position = Inordermap[element];
       
-      root->left = solve(in, pre, indexstart, position -1, ind, size);
-      root->right = solve(in, pre, position+1, indexend, ind, size);
+      root->left = solve(in, pre, indexstart, position -1, ind, size, Inordermap);
+      root->right = solve(in, pre, position+1, indexend, ind, size, Inordermap);
       
       return root;
   }
   
     Node *buildTree(vector<int> &inorder, vector<int> &preorder) {
         int index = 0;
-        Node*ans = solve(inorder, preorder, 0, inorder.size(), index, inorder.size() );
+        map<int, int> Inordermap;
+        findIndex(inorder,Inordermap, inorder.size());
+        Node*ans = solve(inorder, preorder, 0, inorder.size(), index, inorder.size(), Inordermap );
         return ans;
     }
 };
-
-int main() {
-    return 0;
-}
 
 int main() {
     return 0;
