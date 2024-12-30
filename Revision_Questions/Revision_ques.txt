@@ -164,3 +164,8 @@ https://www.geeksforgeeks.org/problems/k-sum-paths/1
 42. Highest sum of non adjacent nodes
 https://www.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1
 ->Use the inclusion and exclusion principle. 
+
+43. Build a tree using post, pre and in order 
+https://www.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1 || https://www.geeksforgeeks.org/problems/construct-tree-1/1
+-> For pre the elements form 0 to size are roots, for in the elements to the left are left and right are right to the root
+and for post the elements from size to 0 are the roots. The order of tree formation changes from left to right going from pre to post.
