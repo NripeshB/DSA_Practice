@@ -174,3 +174,5 @@ and for post the elements from size to 0 are the roots. The order of tree format
 https://www.geeksforgeeks.org/problems/burning-tree/1
 -> Has two approaches. Recursive and Level order. Create a mapping for parents and function to find the target 
 element. Then track time to burn the tree.
+
+45. Morris Traversal for Inorder
