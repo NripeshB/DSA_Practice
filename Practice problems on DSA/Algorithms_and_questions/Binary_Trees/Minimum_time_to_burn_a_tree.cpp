@@ -56,6 +56,54 @@ class Solution {
       position(root->right, target, start);
       
   }
+
+
+  //Level order method to calculate the min time for burning a tree
+  /*int BurnIt(Node* start, map<Node*, Node*>& mapped, map<Node*, bool>& visited) {
+        queue<Node*> q;
+        q.push(start);
+        visited[start] = true;
+
+        int Time = 0;
+
+        while (!q.empty()) {
+            int size = q.size();
+            bool newBurn = false;
+
+            for (int i = 0; i < size; i++) {
+                Node* current = q.front();
+                q.pop();
+
+                // Process left child
+                if (current->left && !visited[current->left]) {
+                    q.push(current->left);
+                    visited[current->left] = true;
+                    newBurn = true;
+                }
+
+                // Process right child
+                if (current->right && !visited[current->right]) {
+                    q.push(current->right);
+                    visited[current->right] = true;
+                    newBurn = true;
+                }
+
+                // Process parent
+                if (mapped[current] && !visited[mapped[current]]) {
+                    q.push(mapped[current]);
+                    visited[mapped[current]] = true;
+                    newBurn = true;
+                }
+            }
+
+            // Increment time if any new nodes burned in this iteration
+            if (newBurn) {
+                Time++;
+            }
+        }
+
+        return Time;
+    }*/
   
  
       //Recursive method to calculate min time to burn a tree
