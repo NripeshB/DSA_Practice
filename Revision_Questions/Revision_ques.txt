@@ -169,3 +169,8 @@ https://www.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1
 https://www.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1 || https://www.geeksforgeeks.org/problems/construct-tree-1/1
 -> For pre the elements form 0 to size are roots, for in the elements to the left are left and right are right to the root
 and for post the elements from size to 0 are the roots. The order of tree formation changes from left to right going from pre to post.
+
+44. Minimum time to burn a Tree.
+https://www.geeksforgeeks.org/problems/burning-tree/1
+-> Has two approaches. Recursive and Level order. Create a mapping for parents and function to find the target 
+element. Then track time to burn the tree.
