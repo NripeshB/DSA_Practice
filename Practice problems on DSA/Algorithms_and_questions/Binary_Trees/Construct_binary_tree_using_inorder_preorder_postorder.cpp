@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+#include <iostream>
+using namespace std;
+
 
 //Given inorder, preorder to make the binary tree.
 //https://www.geeksforgeeks.org/problems/construct-tree-1/1
@@ -48,6 +51,10 @@ class Solution {
         return ans;
     }
 };
+
+int main() {
+    return 0;
+}
 
 int main() {
     return 0;
