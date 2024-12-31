@@ -1,4 +1,4 @@
-Complete the mathematical questions and simple quesitons.
+Revise the mathematical questions and simple quesitons.
 
 1. First and Last occurrence in a sorted array.
 https://bit.ly/3Ioexjh 
