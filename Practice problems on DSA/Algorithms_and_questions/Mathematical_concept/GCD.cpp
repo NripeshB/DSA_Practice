@@ -2,6 +2,9 @@
 
 using namespace std;
 
+//works on the mathematical principle that |num1 - num2| repeat it till num1 = num2, and return num1 or num2 obv.
+// example 10 and 2. 10 -2 = 8; 8-2 = 6; 6 -2 = 4; 4-2 = 2; ans is 2. 36 and 17 . 36 -17 = 19; 19 -17 = 2 ; 17 -2 ... leads to 1 as answer,
+
 class Solution
 {
 public:
