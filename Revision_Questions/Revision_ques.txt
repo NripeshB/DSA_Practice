@@ -62,7 +62,7 @@ https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
 https://leetcode.com/problems/reverse-nodes-in-k-group/
 ->Handle using recursion and keep in mind to check if the group of K elements can be formed.
 
-17. Hare and tortoise method.
+17. Hare and tortoise method (Floyd cycle detection algorithm).
 https://leetcode.com/problems/linked-list-cycle-ii/
 ->Using  a slow and fast pointer on can detect loops and for non looping lists can find the mid of the loop in constant space .
 
