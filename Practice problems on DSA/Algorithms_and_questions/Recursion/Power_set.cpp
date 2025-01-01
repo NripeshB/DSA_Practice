@@ -1,4 +1,4 @@
-// https : // leetcode.com/problems/subsets/
+// https://leetcode.com/problems/subsets/
 #include <iostream>
 
 using namespace std;
