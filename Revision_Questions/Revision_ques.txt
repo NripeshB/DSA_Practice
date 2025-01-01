@@ -111,7 +111,7 @@ https://www.naukri.com/code360/problems/n-stacks-in-an-array_1164271?leftPanelTa
 ->Create two seperate arrays for top and next. Top storing the respective number of stacks and next
  containing the next element after the respective top element. Have propper initialization for all of these arrays.
 
-29. Min Stack element at Tc = O(1); SC = O(1)  
+29. (special stack) Min Stack element at Tc = O(1); SC = O(1)  
 https://www.naukri.com/code360/problems/design-a-stack-that-supports-getmin-in-o-1-time-and-o-1-extra-space_842465?topList=love-babbar-dsa-sheet-problems%3Fsource%3Dyoutube&campaign=Codestudio_Lovebabbar&utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Lovebabbar&leftPanelTabValue=SUBMISSION
 ->Uses a specific formula. (2x - min);
 
@@ -157,7 +157,7 @@ https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
 https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
 ->try using recursion and normal method.
 
-41. Valid Path with some K.
+41. Valid Path with sum K.
 https://www.geeksforgeeks.org/problems/k-sum-paths/1
 -> Uses backtracking. Have the loop for the array traversal start from behind to measure sum from the leaf to the root.
 
@@ -175,6 +175,8 @@ https://www.geeksforgeeks.org/problems/burning-tree/1
 -> Has two approaches. Recursive and Level order. Create a mapping for parents and function to find the target 
 element. Then track time to burn the tree.
 
-45. Morris Traversal for Inorder. Flattening a tree.
+45.Left, right, bottom and top view of a tree.
+
+46. Morris Traversal for Inorder. Flattening a tree.
 https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1
 -> Use morris traversal to solve it.
