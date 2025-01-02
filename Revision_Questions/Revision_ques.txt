@@ -183,3 +183,6 @@ https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1
 
 47. Implementation of BST and validation of the same 
 (https://www.naukri.com/code360/problems/validate-bst_799483?leftPanelTab=0&leftPanelTabValue=SUBMISSION)
+
+48. Finding the predecessor and successor in a BST.
+https://www.naukri.com/code360/problems/_893049?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&leftPanelTabValue=SUBMISSION
