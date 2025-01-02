@@ -39,7 +39,8 @@ void inorder(TreeNode<int>* root, vector<int>&nums){
     
 }
 
-
+//Flattening a bst can be done by taking out the inorder traversal, and saving it into an array
+//using that array (of Nodes) to then generate a linked list int the from of a skew tree
 TreeNode<int>* flatten(TreeNode<int>* root)
 {
     vector<int> nums;

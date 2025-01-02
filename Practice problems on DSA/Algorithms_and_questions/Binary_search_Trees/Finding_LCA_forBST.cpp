@@ -14,7 +14,8 @@ using namespace std;
     };
 
 
-
+//using the logic that LCA would lie in between both the values or would be one of the values
+//for a binary search tree.
 
     TreeNode *LCAinaBST(TreeNode *root, TreeNode *P, TreeNode *Q)
 {

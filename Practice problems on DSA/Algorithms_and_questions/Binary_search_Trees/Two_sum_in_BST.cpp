@@ -15,7 +15,7 @@ class BinaryTreeNode {
     }
     
 };
-
+//we will just save the inorder traversal in a vector and use that array to find sum
 void inorder(BinaryTreeNode* root, int target, vector<int>&nums){
     if(root == NULL){
         return ;

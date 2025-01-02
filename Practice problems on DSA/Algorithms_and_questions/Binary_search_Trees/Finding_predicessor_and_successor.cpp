@@ -37,11 +37,14 @@ pair<int, int> predecessorSuccessor(TreeNode *root, int key)
     }
     TreeNode* L   = temp->left;
 
+    //finding out the largest element in the left subtree
     while( L!= NULL){
         pred = L->data;
         L =L->right;
     }
     TreeNode* R   = temp->right;
+
+    //finding out the smallest element in the right subtree
     while( R!= NULL){
         succ = R->data;
         R =R->left;

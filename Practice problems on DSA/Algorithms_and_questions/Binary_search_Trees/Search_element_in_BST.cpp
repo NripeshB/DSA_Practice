@@ -35,7 +35,7 @@ bool searchInBST(BinaryTreeNode<int> *root, int x) {
     return false;
 }
 
-//This is a less optimised recursive method.ß
+//This is a less optimised recursive method
 void solve(BinaryTreeNode<int> *root, int x, bool& ans){
     if(root == NULL){
         ans = false;
