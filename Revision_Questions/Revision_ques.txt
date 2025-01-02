@@ -189,3 +189,6 @@ https://www.naukri.com/code360/problems/_893049?topList=love-babbar-dsa-sheet-pr
 
 49. Finiding the LCA of a BST.
 https://www.naukri.com/code360/problems/lca-in-a-bst_981280?leftPanelTab=0&leftPanelTabValue=SUBMISSION
+
+50. Two sum in BST
+https://www.naukri.com/code360/problems/two-sum-in-a-bst_1062631?leftPanelTab=0&leftPanelTabValue=SUBMISSION
