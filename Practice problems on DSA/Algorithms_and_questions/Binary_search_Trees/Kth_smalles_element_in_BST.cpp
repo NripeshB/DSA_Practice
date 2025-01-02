@@ -1,7 +1,7 @@
 //https://www.naukri.com/code360/problems/find-k-th-smallest-element-in-bst_1069333?leftPanelTab=0&leftPanelTabValue=SUBMISSION
 #include <iostream>
 using namespace std;
-
+// you can write the same code using morris traversal for O(1) SC
 // you can also save the answer from inorder traversal in a vector and iterate to the kth element
     class BinaryTreeNode 
     {
