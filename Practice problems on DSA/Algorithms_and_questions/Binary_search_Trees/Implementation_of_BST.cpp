@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-
+//It is called a binary search tree because the time complexity of inserting one node into the BST is  O(logN) where N is the 
+//total lenght of all the nodes connection
 
 class Node{
     public:
