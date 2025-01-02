@@ -180,3 +180,6 @@ element. Then track time to burn the tree.
 46. Morris Traversal for Inorder. Flattening a tree.
 https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1
 -> Use morris traversal to solve it.
+
+47. Implementation of BST and validation of the same 
+(https://www.naukri.com/code360/problems/validate-bst_799483?leftPanelTab=0&leftPanelTabValue=SUBMISSION)
