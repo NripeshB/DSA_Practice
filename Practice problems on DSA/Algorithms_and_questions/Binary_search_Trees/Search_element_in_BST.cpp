@@ -12,6 +12,29 @@ using namespace std;
         BinaryTreeNode(T x, BinaryTreeNode<T> *left, BinaryTreeNode<T> *right) : data(x), left(left), right(right) {}
     };
 
+
+
+//Iterative method, better complexity
+bool searchInBST(BinaryTreeNode<int> *root, int x) {
+
+    BinaryTreeNode<int>* temp = root;
+
+    while(temp != NULL){
+    if(temp->data == x){
+        return true;
+    }
+
+    else if (temp->data<x){
+        temp = temp->right;
+    }
+
+    else {
+        temp = temp->left;
+    }
+    }
+    return false;
+}
+
 //This is a less optimised recursive method.ß
 void solve(BinaryTreeNode<int> *root, int x, bool& ans){
     if(root == NULL){
