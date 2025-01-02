@@ -186,3 +186,6 @@ https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1
 
 48. Finding the predecessor and successor in a BST.
 https://www.naukri.com/code360/problems/_893049?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&leftPanelTabValue=SUBMISSION
+
+49. Finiding the LCA of a BST.
+https://www.naukri.com/code360/problems/lca-in-a-bst_981280?leftPanelTab=0&leftPanelTabValue=SUBMISSION
