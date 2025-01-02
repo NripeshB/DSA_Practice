@@ -86,6 +86,7 @@ void levelOrderTraversal(Node* root){
 
 
 //Inorder traversal. Follows the LNR traversal
+//Inorder of BST is in increasing order
 void Inorder(Node*root){
     if (root == NULL)
     {
