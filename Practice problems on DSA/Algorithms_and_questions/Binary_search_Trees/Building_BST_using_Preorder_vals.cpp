@@ -25,6 +25,9 @@ using namespace std;
         }
     };
  
+//You would have to pass minimum and maximum range for which the next num can lie in a subtree.
+//for ex: at first from INT_MIN to INT_MAX, then for root->left range becomes INT_MIN to root->data.
+//doing this recursively gives the ans. tip: we can do it without minimum val too.
 
 BinaryTreeNode* solve(vector<int> &preorder, int mini, int maxi, int &i){
     if(i>=preorder.size()){
