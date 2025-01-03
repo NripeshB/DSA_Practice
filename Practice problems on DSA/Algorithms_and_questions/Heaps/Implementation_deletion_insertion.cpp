@@ -50,6 +50,7 @@ class heap{
 };
 
 // Heapify function to maintain heap property
+//it stores the largest value and compares it from the left and the right child.
 void Heapify(int arr[], int n, int i){
     int largest = i;
     int left = 2*i;
@@ -101,3 +102,5 @@ int main() {
 
     return 0;
 }
+
+//checkout the heapsort algorithm
