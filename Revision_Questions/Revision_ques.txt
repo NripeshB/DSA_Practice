@@ -206,3 +206,7 @@ https://www.naukri.com/code360/problems/preorder-traversal-to-bst_893111?leftPan
 
 55. Size of the largest BST in a tree.
 https://www.naukri.com/code360/problems/largest-bst-subtree_893103?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar&leftPanelTabValue=SUBMISSION
+
+56. Heap insertion; heapification and deletion
+
+57. heap sort
