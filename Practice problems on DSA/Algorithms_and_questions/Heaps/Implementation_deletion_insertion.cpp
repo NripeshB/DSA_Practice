@@ -1,16 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//In a heap, the indexing is like in a tree data structure, starting from left to the right;
-//eg: (the indexing)
-//               1
-//         2           3
-//      4     5      6    7  
-//   8   9  10  11 12 13 14  15
-//heap is a complete binary tree ;
-//and it either follows a min heap or max heap; ie
-// IN min heap, root element is smaller than childern, while in max heap its the opposite.
-
+void Heapify(int arr[], int n, int i);
 
 class heap{
     public:
@@ -21,11 +12,6 @@ class heap{
         arr[0] = -1;
         size = 0;
     }
-
-// the value for the left chld for a root at  n index  can be found by 2n and
-//for right child as 2n +1;
-//similarly the parent for a child at n or n+1 can be found by n/2 or n+1/2;
-
 
     void insert(int data){
         size += 1;
@@ -48,7 +34,6 @@ class heap{
         {
             cout<<arr[i]<<" ";
         }cout<<endl;
-        
     }
 
     void deleteinHeap(){
@@ -58,35 +43,30 @@ class heap{
 
         arr[1]  = arr[size];
         size--;
-
-        int i =1;
-        while(i< size){
-            int leftchild = 2*i;
-            int rightchild = 2*i +1;
-
-
-            if(leftchild <= size && arr[leftchild]> arr[i]){
-                if (rightchild < size && arr[rightchild]> arr[i])
-                {
-                    swap(arr[rightchild],arr[i]);
-                    i = rightchild;
-                }
-                else{
-                
-                swap(arr[leftchild],arr[i]);
-                i = leftchild;}
-            }
-            else if(rightchild <= size && arr[rightchild]> arr[i]){
-                swap(arr[rightchild],arr[i]);
-                i = rightchild;
-            }
-            else{
-                return;
-            }
-        }
+        
+        // After deleting the element, place the last swapped element correctly in the heap
+        Heapify(arr, size, 1);
     }
 };
 
+// Heapify function to maintain heap property
+void Heapify(int arr[], int n, int i){
+    int largest = i;
+    int left = 2*i;
+    int right = 2*i + 1;
+
+    if (right <= n && arr[largest] < arr[right]){
+        largest = right;
+    }
+    if (left <= n && arr[largest] < arr[left]){
+        largest = left;
+    }
+
+    if(largest != i){
+        swap(arr[largest], arr[i]);
+        Heapify(arr, n, largest);
+    }
+}
 
 int main() {
 
@@ -100,5 +80,24 @@ int main() {
     h.printheap();
     h.deleteinHeap();
     h.printheap();
+    h.insert(65);
+    h.printheap();
+
+    int arr1[7] = {0, 1, 3, 4, 6, 7, 8}; // 1-based index array
+    int n = 6;
+    
+    // Build heap (heapify from the last non-leaf node)
+    //Leaf nodes in a cbt is always the indexes between n/2 and n
+    //where n is the total no. of nodes in an heap.
+    for (int i = n / 2; i > 0; i--){
+        Heapify(arr1, n, i);
+    }
+
+    // Printing the heap after heapify
+    for (int i = 1; i <= n; i++){
+        cout << arr1[i] << " ";
+    }
+    cout << endl;
+
     return 0;
 }
