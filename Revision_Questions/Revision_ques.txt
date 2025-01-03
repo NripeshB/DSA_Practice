@@ -198,3 +198,6 @@ https://www.naukri.com/code360/problems/flatten-bst-to-a-sorted-list_1169459?lef
 
 52. Normal BST to a Balanced BST 
 https://www.naukri.com/code360/problems/normal-bst-to-balanced-bst_920472?leftPanelTab=0&leftPanelTabValue=PROBLEM
+
+53. Building a BST using Preorder list
+https://www.naukri.com/code360/problems/preorder-traversal-to-bst_893111?leftPanelTab=0&leftPanelTabValue=SUBMISSION
