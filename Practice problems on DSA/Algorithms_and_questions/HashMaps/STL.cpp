@@ -38,7 +38,7 @@ int main() {
     cout<<ans<<endl;
 
     //2
-    int ans = m.at("mera");
+     ans = m.at("mera");
     cout<<ans<<endl;
 
 
@@ -46,7 +46,7 @@ int main() {
 //creates it mapped to 0, but 2nd one throws an error.
     
 
-    cout<<m["unknown"]<<endl;
+   cout<<m["unknown"]<<endl;
     cout<<m.at("unknown")<<endl;
 
     // size
@@ -64,6 +64,29 @@ int main() {
     
 
     cout<<m.size()<<endl;
+
+    // itrator for the map:
+    //for ordered map it was simply for( auto i: m){ cout<< i.first<<" "<< i.second;}
+
+    //for unordered map
+
+    unordered_map<string, int>:: iterator it = m.begin();
+
+    while(it != m.end()){
+        cout<< it->first << " "<< it->second<< endl;
+        it++;
+    }
+
+//things are printed in disorder for unordered 
+
+/*unordered_map<string, int>:: iterator it = m.begin();
+
+    while(it != m.end()){
+        cout<< it->first << " "<< it->second<< endl;
+        it++;
+    }*/
+
+     
     return 0;
 
 
