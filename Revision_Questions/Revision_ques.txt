@@ -228,3 +228,6 @@ https://www.naukri.com/code360/problems/merge-k-sorted-arrays_975379?leftPanelTa
 
 63. Smallest range from the k sorted lists
 https://www.naukri.com/code360/problems/smallest-range-from-k-sorted-list_1069356?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar&leftPanelTabValue=PROBLEM
+
+64. median in a stream 
+https://www.naukri.com/code360/problems/median-in-a-stream_975268?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar&leftPanelTabValue=SUBMISSION
