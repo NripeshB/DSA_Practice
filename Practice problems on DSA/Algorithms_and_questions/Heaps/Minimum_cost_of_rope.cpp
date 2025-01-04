@@ -4,6 +4,7 @@ using namespace std;
 
 class Solution {
   public:
+  // make a min heap and add two cosequent tops by popping and then push the sum in pq along with saving in the ans
     
     int minCost(vector<int>& arr) {
         priority_queue<int, vector<int>, greater<int> > p;
