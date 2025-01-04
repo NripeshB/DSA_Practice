@@ -225,3 +225,6 @@ https://www.naukri.com/code360/problems/k-th-largest-sum-contiguous-subarray_920
 
 62. Merging k arrays together & merge k LL together ( added another question with the same algorith)
 https://www.naukri.com/code360/problems/merge-k-sorted-arrays_975379?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+
+63. Smallest range from the k sorted lists
+https://www.naukri.com/code360/problems/smallest-range-from-k-sorted-list_1069356?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar&leftPanelTabValue=PROBLEM
