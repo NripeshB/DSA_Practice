@@ -216,3 +216,6 @@ https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1
 
 59. Checking a binary tree is a heap or not
 https://geeksforgeeks.org/problems/is-binary-tree-heap/1
+
+60. Convert a BST into a heap
+https://www.naukri.com/code360/problems/convert-bst-to-min-heap_920498?leftPanelTabValue=SUBMISSION
