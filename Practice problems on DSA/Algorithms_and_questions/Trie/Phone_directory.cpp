@@ -61,6 +61,10 @@ class Trie{
         insertUtil(root,word);
     }
 
+//this function takes in the prefix and the curr node.
+// if it stands on a terminal node, it pushes it into the temp data struct 
+// if it isnt one then traverses to the next node to curr and pushes the char into the prefix then
+// recursively calls itself then backtracks to preserve the prefix.
     void printsugg( vector<string>& temp, string prefix, TrieNode* curr){
         if( curr->isTerminal){
             temp.push_back(prefix);
@@ -75,7 +79,10 @@ class Trie{
             }
         }
     }
-    
+    //this function goes through the characters given in the query, adds it to the prefix and checks 
+    //whether they exists as the children of the prev node and names it as curr.
+    // if it does exist, it passes the prefix hence built along with an empty data struct to collect
+    // the suggestion and then prints it into the output vector 
 vector<vector<string> > getsugg(string query){
     TrieNode* prev = root;
     vector<vector<string> > output;
