@@ -49,7 +49,7 @@ class Trie{
 
         //And if it isnt present then
         else{
-            child = new TrieNode(word[index]);
+            child = new TrieNode(word[0]);
             root->children[index] = child;
         }
 
