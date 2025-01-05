@@ -93,6 +93,61 @@ class Trie{
 
         return searchUtil(root, word);
     }
+
+
+    bool deleteUtil(TrieNode* root, string word) {
+
+        //If word length become 0 this is the base case
+        if (word.length() == 0) {
+            // Mark current node as not terminal
+            if (root->isTerminal) {
+                root->isTerminal = false;
+                // If no children exist, this node can be deleted
+                for (int i = 0; i < 26; i++) {
+                    if (root->children[i] != NULL) {
+                        return false; // Can't delete this node, as it has children
+                    }
+                }
+                return true; // Safe to delete this node
+            }
+            return false; // Word not found
+        }
+
+        int index = word[0] - 'A';
+        TrieNode* child = root->children[index];
+
+        if (child == NULL) {
+            return false; // Word not found
+        }
+
+        // Recurse to delete the next character
+        bool shouldDeleteChild = deleteUtil(child, word.substr(1));
+
+        if (shouldDeleteChild) {
+            // Delete the child node
+            delete child;
+            root->children[index] = NULL;
+
+            // Check if current node can also be deleted
+            if (!root->isTerminal) {
+                for (int i = 0; i < 26; i++) {
+                    if (root->children[i] != NULL) {
+                        return false; // Can't delete this node, as it has children
+                        //eg: a words like APPLE and APPLY , if i go to delete APPLE then i can only delete
+                        // the E as APPLY exists and uses the initial APPL
+                    }
+                }
+                return true; // Safe to delete this node
+            }
+        }
+
+        return false; // Node cannot be deleted
+    }
+
+    void deleteWord(string word) {
+        deleteUtil(root, word);
+    }
+
 };
 
 
@@ -102,5 +157,15 @@ int main() {
     root->insert("hello");
 
     cout<<"Does hello exist"<< ": "<<root->searchWord("hello")<< endl;
+    Trie* trie  = new Trie();
+
+    trie->insert("HELLO");
+    trie->insert("HE");
+
+    cout << "Does HELLO exist? " << trie->searchWord("HELLO") << endl;
+    trie->deleteWord("HELLO");
+    cout << "Does HELLO exist after deletion? " << trie->searchWord("HELLO") << endl;
+    cout << "Does HE exist? " << trie->searchWord("HE") << endl;
+
     return 0;
 }
