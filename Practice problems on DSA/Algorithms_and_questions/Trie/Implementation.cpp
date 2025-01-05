@@ -153,7 +153,7 @@ class Trie{
 
 int main() {
     Trie* root  = new Trie();
-    // insertion and searching time complexity is O(l) where l is the length of the word
+    // insertion, deletion,searching time complexity is O(l) where l is the length of the word
     root->insert("hello");
 
     cout<<"Does hello exist"<< ": "<<root->searchWord("hello")<< endl;
