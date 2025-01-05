@@ -22,6 +22,7 @@ class TrieNode{
 
 class Trie{
     public:
+    //defining a root node for the trie
     TrieNode* root;
     Trie(){
         //initialising the root node with a null character
@@ -58,14 +59,48 @@ class Trie{
     }
 
     void insert( string word){
-        TrieNode* root;
         insertUtil(root,word);
+    }
+
+    bool searchUtil(TrieNode* root, string word){
+        if (word.length() == 0)
+        {
+            //if the word is searched then we need to confirm the word found exists or not
+            //eg: NO would be true for word NOTHING if we didnt check the isterminal 
+            return root->isTerminal;
+        }
+        //assuming word coming in is in all caps
+        int index = word[0] - 'A';
+        TrieNode* child;
+        //word is present
+        if(root->children[index] !=NULL){
+            child = root->children[index];
+        }
+
+        //if its absent just return false
+
+        else{
+            return false;
+        }
+
+        //RECURSION
+
+        return searchUtil(child, word.substr(1));
+        
+    }
+
+    bool searchWord(string word){
+
+        return searchUtil(root, word);
     }
 };
 
 
 int main() {
     Trie* root  = new Trie();
+    // insertion and searching time complexity is O(l) where l is the length of the word
     root->insert("hello");
+
+    cout<<"Does hello exist"<< ": "<<root->searchWord("hello")<< endl;
     return 0;
 }
