@@ -237,3 +237,6 @@ https://www.naukri.com/code360/problems/implement-a-phone-directory_1062666?topL
 
 66. N queen problems ( both optimised and unoptimised)
 https://leetcode.com/problems/n-queens/
+
+67. Sudoku Solver
+https://leetcode.com/problems/sudoku-solver/
