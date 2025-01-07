@@ -5,6 +5,9 @@
 
 using namespace std;
 
+//here we are just picking the first mapped element in a graph and 
+//saving its connected notes in the queue all the while popping it before going into the for loop
+//alongside saving the data for the already visited nodes to prevent cycling
 vector<int> bfsTraversal(int n, unordered_map<int, list<int>> &adj) {
     vector<int> ans;
     queue<int> q; // Queue to store nodes for BFS
