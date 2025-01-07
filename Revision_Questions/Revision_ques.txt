@@ -234,3 +234,6 @@ https://www.naukri.com/code360/problems/median-in-a-stream_975268?leftPanelTab=0
 
 65. PHone directory question
 https://www.naukri.com/code360/problems/implement-a-phone-directory_1062666?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar&leftPanelTabValue=SUBMISSION
+
+66. N queen problems ( both optimised and unoptimised)
+https://leetcode.com/problems/n-queens/
