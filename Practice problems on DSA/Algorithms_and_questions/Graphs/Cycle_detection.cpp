@@ -17,8 +17,26 @@ public:
     }
 };
 
+//Function to check for a cycle in one connected component using DFS
+bool isCycleDFS(int start, int parent, unordered_map<int, vector<int>> &Adj, unordered_map<int, bool> &visited) {
+    visited[start] = true;
+
+    for (auto neighbor : Adj[start]) {
+        if (!visited[neighbor]) {
+            // Recur for unvisited neighbors
+            if (isCycleDFS(neighbor, start, Adj, visited)) {
+                return true;
+            }
+        } else if (neighbor != parent) {
+            // If the neighbor is visited and not the parent, cycle detected
+            return true;
+        }
+    }
+    return false;
+}
+
 // Function to check for a cycle in one connected component using BFS
-bool isCycle(int start, unordered_map<int, vector<int>> &Adj, unordered_map<int, bool> &visited) {
+bool isCycleBFS(int start, unordered_map<int, vector<int>> &Adj, unordered_map<int, bool> &visited) {
     queue<int> q;
     unordered_map<int, int> parent;
 
@@ -55,7 +73,14 @@ void DetectCycle(unordered_map<int, vector<int>> &Adj) {
         //If the first node is not visited then the entire subgraph is not visited as the iscycle 
         //goes through the entire connected graph.
         if (!visited[node]) {
-            if (isCycle(node, Adj, visited)) {
+            if (isCycleBFS(node, Adj, visited)) {
+                cout << "A cycle is detected." << endl;
+                return;
+            }
+        }
+
+        if (!visited[node]) {
+            if (isCycleDFS(node,-1, Adj, visited)) {
                 cout << "A cycle is detected." << endl;
                 return;
             }

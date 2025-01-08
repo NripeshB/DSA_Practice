@@ -9,14 +9,10 @@ using namespace std;
 //saving its connected notes in the queue all the while popping it before going into the for loop
 //alongside saving the data for the already visited nodes to prevent cycling
 
-void dfsHelper(int n, unordered_map<int, list<int>> &adj){
-
-}
-vector<int> dfsTraversal(int n, unordered_map<int, list<int>> &adj) {
+vector<int> bfsTraversal(int n, unordered_map<int, list<int>> &adj) {
     vector<int> ans;
     queue<int> q; // Queue to store nodes for BFS
     unordered_map<int, bool> visited; // Keep track of visited nodes
-
     if (adj.empty()) return ans; // Handle edge case: empty graph
 
     for(auto&i: adj){
