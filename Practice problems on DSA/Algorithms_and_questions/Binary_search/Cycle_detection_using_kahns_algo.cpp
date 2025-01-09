@@ -57,7 +57,17 @@ vector<int> Topological_Sort(graphs&graph) {
             }
         }
     }
-  
+
+    //This is the condition which checks the cycle in kahns algo
+    //the loop would never become less than 1 hence it wont be added to the queue
+    //thus at the end the topological sort have less no. of nodes than 
+    //the total amount in the graph
+    if(ans.size() != graph.adj.size()){
+        cout<<"The graph contains a cycle!!"<<endl;
+    }
+    else{
+        cout<<"The graph is acyclic."<<endl;
+    }
     return ans;
 }
 
@@ -69,22 +79,19 @@ int main() {
     adj.add_edge(1, 2, true);
     adj.add_edge(2, 3, true);
     adj.add_edge(3, 4, true);
-    adj.add_edge(4, 6, true);
+    adj.add_edge(4, 1, true);
     adj.add_edge(4, 5, true);
 
     // Perform Topological Sort
     vector<int> result = Topological_Sort(adj);
 
     // Print the result
-    if (!result.empty()) {
+    
         cout << "Topological Sort: ";
         for (int node : result) {
             cout << node << " ";
         }
         cout << endl;
-    } else {
-        cout << "The graph contains a cycle or is empty." << endl;
-    }
 
     return 0;
 }
