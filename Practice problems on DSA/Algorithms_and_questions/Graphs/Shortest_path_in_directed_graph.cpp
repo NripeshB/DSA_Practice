@@ -1,10 +1,11 @@
 #include <iostream>
 #include <unordered_map>
-#include <list>
+#include <vector>
 #include <queue>
+#include <stack>
 
 using namespace std;
-//the following code gives the shortest path in dire ted
+
 class graphs {
 public:
     unordered_map<int, vector<int> > adj;
@@ -17,64 +18,57 @@ public:
     }
 };
 
-
-//here we are just picking the first mapped element in a graph and 
-//saving its connected notes in the queue all the while popping it before going into the for loop
-//alongside saving the data for the already visited nodes to prevent cycling
-
-vector<int> Shortest_path(int start,int end, graphs &adj) {
-    vector<int> ans;
+vector<int> Shortest_path(int start, int end, graphs &graph) {
     queue<int> q; // Queue to store nodes for BFS
     unordered_map<int, bool> visited; // Keep track of visited nodes
-    unordered_map<int, int> parent; // Keep track of visited nodes
+    unordered_map<int, int> parent; // Map to reconstruct the path
 
-   
-        int initial = start; // this loop keeps the disjoint graphs in check
+    // Initialize BFS
+    q.push(start);
+    visited[start] = true;
+    parent[start] = -1;
 
-    // Start BFS from node 0 (or any node present in the graph)
-    //here we are assuming that the graph's starting element is 0
-    parent[initial] = -1;
-    q.push(initial);
-    visited[initial] = true;
-
-    while (!q.empty()) {
+    // Perform BFS
+    bool found = false; // Flag to indicate when the target is found
+    while (!q.empty() && !found) {
         int node = q.front();
         q.pop();
-        ans.push_back(node);
 
-        // Process all neighbors of the current node
-        for (int neighbor : adj.adj[node]) {
+        // Process neighbors
+        for (size_t i = 0; i < graph.adj[node].size(); ++i) {
+            int neighbor = graph.adj[node][i];
             if (!visited[neighbor]) {
+                visited[neighbor] = true;
                 parent[neighbor] = node;
                 q.push(neighbor);
-                visited[neighbor] = true; // Mark as visited
+
+                // Stop BFS early if we reach the target node
+                if (neighbor == end) {
+                    found = true;
+                    break; // Exit the loop processing neighbors
+                }
             }
         }
     }
-    stack<int> s;
-    int search = end ;
-    while(search != start){
-        s.push(search);
-        search = parent[search];
-    }
-    s.push(search);
 
-    vector<int> realans;
-    while(!s.empty()){
-        realans.push_back(s.top());
-        s.pop();
+    // Reconstruct the shortest path from `end` to `start`
+    if (!visited[end]) {
+        return vector<int>(); // No path exists; so returning an empty vector
     }
-    
 
-    return realans;
+    vector<int> path;
+    for (int at = end; at != -1; at = parent[at]) {
+        path.push_back(at);
+    }
+    //reversing using an algorithm, you can also do this by saving it in a stack and then popping it out
+    reverse(path.begin(), path.end());
+    return path;
 }
 
-
-
 int main() {
-        // Create a directed graph
+    // Create a directed graph
     graphs adj;
-     adj.add_edge(0, 1, true);
+    adj.add_edge(0, 1, true);
     adj.add_edge(1, 2, true);
     adj.add_edge(2, 3, true);
     adj.add_edge(3, 4, true);
@@ -88,14 +82,13 @@ int main() {
 
     if (!result.empty()) {
         cout << "Shortest path: ";
-        for (int node : result) {
-            cout << node << " ";
+        for (size_t i = 0; i < result.size(); ++i) {
+            cout << result[i] << " ";
         }
         cout << endl;
     } else {
         cout << "No path found." << endl;
     }
-
 
     return 0;
 }
