@@ -242,3 +242,5 @@ https://leetcode.com/problems/n-queens/
 https://leetcode.com/problems/sudoku-solver/
 
 68. Graph implementation and BFS & DFS
+
+69. Cycle detection: undirected (BFS / DFS) && directed(DFS)
