@@ -6,6 +6,8 @@
 
 using namespace std;
 
+
+//this function finds out the shortest length between two nodes in a undirected unweighted graphs
 class graphs {
 public:
     unordered_map<int, vector<int> > adj;
