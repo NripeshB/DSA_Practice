@@ -1,0 +1,47 @@
+
+Spanning Tree
+A spanning tree of a graph is a subgraph that includes all the vertices of the original graph,
+is connected, and has no cycles. If a graph has V vertices, then the spanning tree will have exactly 
+V−1 edges.
+
+Example: Original Graph (G)
+  1---2
+  |\  |
+  | \ |
+  3---4
+
+Spanning Tree (T)
+  1---2
+  |    
+  3---4
+
+In this example, the spanning tree includes all vertices (1, 2, 3, 4) but has no cycles.
+
+
+Minimum Spanning Tree (MST)
+A minimum spanning tree is a spanning tree of a weighted graph where the sum of the weights of the edges is minimized.
+
+
+Weighted Graph 
+
+       (1)
+  1------------2
+  | \          |  
+  |   \        |  
+  |(3)  \ (5)  |  (2)
+  |       \    |  
+  |         \  |  
+  3------------4
+    (4)
+
+
+MST of the Graph
+           (1)
+  1------------2
+  |            |  
+  |            |  
+  |(3)         |  (2)
+  |            |  
+  |            |  
+  3            4
+    
