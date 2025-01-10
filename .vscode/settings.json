@@ -3,6 +3,9 @@
         "iostream": "cpp",
         "vector": "cpp",
         "unordered_map": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "__tree": "cpp",
+        "bitset": "cpp",
+        "set": "cpp"
     }
 }
