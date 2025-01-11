@@ -250,3 +250,5 @@ https://leetcode.com/problems/sudoku-solver/
 71. Kahn's algorithm && shortest path in undirected unweighted graphs && shortest path in DAG weighted
 
 72. Dijkstra's algorithm
+
+73. Prims algorithm
