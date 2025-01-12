@@ -252,3 +252,5 @@ https://leetcode.com/problems/sudoku-solver/
 72. Dijkstra's algorithm
 
 73. Prims algorithm
+
+74. Kruskals algorithm
