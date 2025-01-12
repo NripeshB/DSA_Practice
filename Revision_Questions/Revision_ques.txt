@@ -254,3 +254,5 @@ https://leetcode.com/problems/sudoku-solver/
 73. Prims algorithm
 
 74. Kruskals algorithm
+
+75. Bridges in a graph
