@@ -258,3 +258,5 @@ https://leetcode.com/problems/sudoku-solver/
 75. Bridges in a graph
 
 76. Trajan's algorithm or finding articulation point in a graph
+
+77. Kosaraju's algorithm
