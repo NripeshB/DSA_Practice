@@ -18,8 +18,6 @@ vector<int> bfsTraversal(int n, unordered_map<int, list<int>> &adj) {
     for(auto&i: adj){
         int initial = i.first; // this loop keeps the disjoint graphs in check
 
-    // Start BFS from node 0 (or any node present in the graph)
-    //here we are assuming that the graph's starting element is 0
     q.push(initial);
     visited[initial] = true;
 
