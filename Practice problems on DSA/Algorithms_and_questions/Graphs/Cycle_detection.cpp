@@ -7,7 +7,7 @@ using namespace std;
 template <typename T>
 class Graph {
 public:
-    unordered_map<T, vector<T>> adj;
+    unordered_map<T, vector<T> > adj;
 
     void add_edge(int u, int v, bool is_directed) {
         adj[u].push_back(v);
@@ -18,7 +18,7 @@ public:
 };
 
 //Function to check for a cycle in one connected component using DFS
-bool isCycleDFS(int start, int parent, unordered_map<int, vector<int>> &Adj, unordered_map<int, bool> &visited) {
+bool isCycleDFS(int start, int parent, unordered_map<int, vector<int> > &Adj, unordered_map<int, bool> &visited) {
     visited[start] = true;
 
     for (auto neighbor : Adj[start]) {
@@ -36,7 +36,7 @@ bool isCycleDFS(int start, int parent, unordered_map<int, vector<int>> &Adj, uno
 }
 
 // Function to check for a cycle in one connected component using BFS
-bool isCycleBFS(int start, unordered_map<int, vector<int>> &Adj, unordered_map<int, bool> &visited) {
+bool isCycleBFS(int start, unordered_map<int, vector<int> > &Adj, unordered_map<int, bool> &visited) {
     queue<int> q;
     unordered_map<int, int> parent;
 
@@ -65,7 +65,7 @@ bool isCycleBFS(int start, unordered_map<int, vector<int>> &Adj, unordered_map<i
 }
 
 // Function to detect cycles in the entire graph
-void DetectCycle(unordered_map<int, vector<int>> &Adj) {
+void DetectCycle(unordered_map<int, vector<int> > &Adj) {
     unordered_map<int, bool> visited;
 
     for (auto &entry : Adj) {
