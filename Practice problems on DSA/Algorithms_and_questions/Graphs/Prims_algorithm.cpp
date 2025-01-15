@@ -18,7 +18,7 @@ int minKey(vector<int> &key, vector<bool> &mstSet, int V) {
     return minIndex;
 }
 
-// Function to print the MST
+// Function to print the MST (minimum spanning tree)
 void printMST(vector<int> &parent, vector<vector<int>> &graph, int V) {
     cout << "Edge \tWeight\n";
     for (int i = 1; i < V; i++) {
