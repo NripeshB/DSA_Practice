@@ -6,7 +6,7 @@
 using namespace std;
 //The helper function is a recursive block which handles the visited elements along with developing answer
 //Function to check for a cycle in one connected component using DFS
-bool isCycleDFS(int start, unordered_map<int, vector<int>> &Adj, unordered_map<int, bool> &visited, unordered_map<int, bool> &DFSVisited) {
+bool isCycleDFS(int start, unordered_map<int, vector<int> > &Adj, unordered_map<int, bool> &visited, unordered_map<int, bool> &DFSVisited) {
     visited[start] = true;
     //marking as visited for the recursive call
     DFSVisited[start] = true;
@@ -30,7 +30,7 @@ bool isCycleDFS(int start, unordered_map<int, vector<int>> &Adj, unordered_map<i
 
 
 // Function to detect cycles in the entire graph
-void DetectCycle(unordered_map<int, vector<int>> &Adj) {
+void DetectCycle(unordered_map<int, vector<int> > &Adj) {
     unordered_map<int, bool> visited;
     unordered_map<int, bool> DFSVisited;
 
