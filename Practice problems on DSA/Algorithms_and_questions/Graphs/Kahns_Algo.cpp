@@ -4,6 +4,7 @@
 #include <queue>
 using namespace std;
 
+//works only on DAG 
 
 class graphs {
 public:
