@@ -258,3 +258,5 @@ https://leetcode.com/problems/sudoku-solver/
 75. Trajan's algorithm or finding articulation point in a graph(this is same as finding the bridge in the graph)
 
 76. Kosaraju's algorithm
+
+77. Bellman Ford algorithm
