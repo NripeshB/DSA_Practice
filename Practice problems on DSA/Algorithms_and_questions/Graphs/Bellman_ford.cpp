@@ -4,6 +4,12 @@
 
 using namespace std;
 
+
+
+//This algorithm works in directed graphs even with negative weights (unlike dijkstra's algorithm).
+//in undirected graphs too if they are converted into directed graph.
+
+
 // Struct to represent an edge
 struct Edge {
     int src, dest, weight;
