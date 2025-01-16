@@ -266,3 +266,6 @@ https://www.youtube.com/watch?v=S31W3kohFDk&list=PLDzeHZWIZsTomOPnCiU3J95WufjE36
 
 79. Coin Change problem
 https://leetcode.com/problems/coin-change/submissions/1510304552/
+
+80. Max adjacent sum
+https://www.geeksforgeeks.org/problems/max-sum-without-adjacents2430/1
