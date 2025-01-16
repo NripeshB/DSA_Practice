@@ -51,6 +51,7 @@ int minimumSpanningTree(vector<vector<int>>& edges, int n) {
     // Min-heap for edges
     priority_queue<vector<int>, vector<vector<int>>, compare> pq;
 
+    //we put all the edges in
     for (auto& edge : edges) {
         pq.push(edge);
     }
