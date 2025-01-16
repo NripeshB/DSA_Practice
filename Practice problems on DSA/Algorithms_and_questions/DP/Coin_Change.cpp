@@ -54,8 +54,8 @@ public:
         for(int i = 1; i<= amount; i++){
             //now for each amount all coin combinations
 
-            for( int j = 0; j<i; j++){
-                if (i - coins[j] >= 0 && dp[i - coins[j] != INT_MAX])
+            for (int j = 0; j < coins.size(); j++){
+                if (i - coins[j] >= 0 && dp[i - coins[j]] != INT_MAX)
                 {
                     dp[i] = min(dp[i], dp[i-coins[j]] + 1);
                 }
