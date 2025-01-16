@@ -260,3 +260,6 @@ https://leetcode.com/problems/sudoku-solver/
 76. Kosaraju's algorithm
 
 77. Bellman Ford algorithm
+
+78. Min cost in stair
+https://www.youtube.com/watch?v=S31W3kohFDk&list=PLDzeHZWIZsTomOPnCiU3J95WufjE36wsb&index=2
