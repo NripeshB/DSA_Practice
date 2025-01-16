@@ -20,7 +20,9 @@ long long int solve(int n, vector<long long int> &dp) {
     if(dp[n] != -1){
         return dp[n];
     }
-
+            // multiplying with n-1 due to n-1 ways of arranging both 
+            // one is to fix one position and permute the rest n-1 ( doing this n-1 times)
+            // along with swapping two postions and permute the rest n-2 ( doing this n-2 + 1 times (+1 due to each swapping logic))
     dp[n] =( (n-1)* ((solve(n-1,dp)%MOD) + (solve(n-2, dp)%MOD)))%MOD;
 
     return dp[n];
