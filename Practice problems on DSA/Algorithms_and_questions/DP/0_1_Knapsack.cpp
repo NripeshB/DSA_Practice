@@ -3,6 +3,9 @@
 using namespace std;
 class Solution {
   public:
+
+
+  //normal recursive approach
   int solve(int capacity, vector<int> &val, vector<int> &wt, int&ans, int size){
       if( size == 0){
           if(wt[0]> capacity){
