@@ -81,3 +81,38 @@ class Solution {
 int main() {
     return 0;
 }
+
+//Using tabulation method
+
+#include <vector>
+#include <limits.h>
+using namespace std;
+
+class Solution {
+  public:
+
+    // Function to return max value that can be put in knapsack of capacity.
+    int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
+        int size = val.size();
+        
+        // Initialize a dp table with dimensions (size+1) x (capacity+1)
+        vector<vector<int>> dp(size + 1, vector<int>(capacity + 1, 0));
+
+        // Bottom-up approach
+        for (int index = 1; index <= size; index++) {
+            for (int w = 0; w <= capacity; w++) {
+                int inc = 0;
+                if (wt[index - 1] <= w) {  // Correct index for `wt` array
+                    inc = val[index - 1] + dp[index - 1][w - wt[index - 1]];
+                }
+                int exc = dp[index - 1][w];
+                dp[index][w] = max(inc, exc);
+            }
+        }
+
+        return dp[size][capacity];
+    }
+};
+int main() {
+    return 0;
+}
