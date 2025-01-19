@@ -61,39 +61,31 @@ public:
 class Solution {
 public:
     int mincostTickets(vector<int>& days, vector<int>& costs) {
-        vector<int>dp(days.size(), INT_MAX);
-        dp[days.size()] = 0;
-        int op1;
-        int op2;
-        int op3;
+        int n = days.size();
+        vector<int> dp(n + 1, INT_MAX);
+        dp[n] = 0;  // Base case: no cost if no days are left.
 
-        for(int i = days.size()-1; i > 0 ; i++){
-        //for one day
-        op1 = costs[0] + dp[i+1];
+        for(int i = n - 1; i >= 0; i--) {
+            // Option 1: One-day ticket
+            int op1 = costs[0] + dp[i + 1];
 
-        int index ;
+            // Option 2: Seven-day ticket
+            int index2 = i;
+            while (index2 < n && days[index2] < days[i] + 7) {
+                index2++;
+            }
+            int op2 = costs[1] + dp[index2];
 
-        //this loop is just for incrementing index to the apt value
+            // Option 3: Thirty-day ticket
+            int index3 = i;
+            while (index3 < n && days[index3] < days[i] + 30) {
+                index3++;
+            }
+            int op3 = costs[2] + dp[index3];
 
-        for( index = i; index < days.size() && days[index]< days[i]+7; index++)
-        continue;
-        
-         op2 = costs[1] + dp[index];
-
-
-       
-
-        //this loop is just for incrementing index to the apt value
-         int index1 ;
-
-        for( index1 = i; index1 < days.size() && days[index1]< days[i]+30; index1++);
-
-        op3 = costs[2] + dp[index1];
-
-        dp[i] = min(op1, min(op2,op3));
-
+            dp[i] = min(op1, min(op2, op3));
         }
 
-        return dp[days.size()-1];
+        return dp[0];
     }
 };
