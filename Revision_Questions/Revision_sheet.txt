@@ -272,3 +272,6 @@ https://www.geeksforgeeks.org/problems/max-sum-without-adjacents2430/1
 
 81. Count_dearrangements 
 https://www.naukri.com/code360/problems/count-derangements_873861?leftPanelTabValue=SUBMISSION
+
+82. Get minimum squares
+https://www.geeksforgeeks.org/problems/get-minimum-squares0538/1
