@@ -1,3 +1,4 @@
+//https://www.geeksforgeeks.org/problems/get-minimum-squares0538/1
 #include <iostream>
 using namespace std;
 
