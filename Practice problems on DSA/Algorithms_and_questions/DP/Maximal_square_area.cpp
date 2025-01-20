@@ -42,6 +42,47 @@ public:
     }
 };
 
+// tabulation method
+
+class Solution {
+public:
+    int maximalSquare(vector<vector<char>>& matrix) {
+        if (matrix.empty() || matrix[0].empty()) {
+            return 0; // Handle empty matrix case
+        }
+
+        int rows = matrix.size();
+        int cols = matrix[0].size();
+        int maxi = 0; // To track the largest square's side length
+
+        // Create a DP table with the same dimensions as the matrix
+        vector<vector<int>> dp(rows, vector<int>(cols, 0));
+
+        // Iterate over each cell in the matrix
+        for (int i = 0; i < rows; ++i) {
+            for (int j = 0; j < cols; ++j) {
+                // If the current cell in the matrix is '1'
+                if (matrix[i][j] == '1') {
+                    // If it's the first row or first column, it can only be a 1x1 square
+                    if (i == 0 || j == 0) {
+                        dp[i][j] = 1;
+                    } else {
+                        // Otherwise, calculate the size of the square ending at this cell
+                        dp[i][j] = 1 + min({dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]});
+                    }
+
+                    // Update the maximum square side length
+                    maxi = max(maxi, dp[i][j]);
+                }
+            }
+        }
+
+        // The area of the largest square is the square of its side length
+        return maxi * maxi;
+    }
+};
+
+
 
 int main() {
     return 0;
