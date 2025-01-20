@@ -275,3 +275,6 @@ https://www.naukri.com/code360/problems/count-derangements_873861?leftPanelTabVa
 
 82. Get minimum squares
 https://www.geeksforgeeks.org/problems/get-minimum-squares0538/1
+
+83. 0, 1 Knapsack problem
+https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
