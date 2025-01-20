@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
 #include <iostream>
 using namespace std;
 
@@ -35,6 +36,30 @@ public:
        return ans;
     }
 };
+
+
+
+class Solution {
+public:
+    int minScoreTriangulation(vector<int>& values) {
+        int n = values.size();
+        vector<vector<int>> dp(n, vector<int>(n, 0));
+
+        // Fill the DP table
+        for (int i = n - 1; i >= 0; i--) {  // Start from the end for smaller ranges
+            for (int j = i + 2; j < n; j++) {  // j should be at least 2 steps ahead of i
+                dp[i][j] = INT_MAX;  // Initialize dp[i][j] to maximum value
+                for (int k = i + 1; k < j; k++) {  // Try every k between i and j
+                    dp[i][j] = min(dp[i][j], values[i] * values[k] * values[j] 
+                                  + dp[i][k] + dp[k][j]);
+                }
+            }
+        }
+
+        return dp[0][n - 1];  // Minimum triangulation cost for the entire polygon
+    }
+};
+
 
 int main() {
     return 0;
