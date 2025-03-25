@@ -1,28 +1,43 @@
 #include <stdio.h>
 
 int main(){
+
+   int n; 
+
+
+   printf("Enter the number n:  ");
+   scanf("%d", &n );
+
+   int ans = 0;
+   int count = 0;
+
+   while(count<=n){
+      ans+=count;
+      count++;
+   }
+   printf("The answer is :%d", ans);
     
-    // int a;
-    // int b;
-    // int c;
-    // printf("Enter the height of the rec: ");
-    // printf("Enter the height of the rec: ");
-    // scanf("%d %d %d", &a, &b ,&c);
-    // if(a>b && a>b){
-    //     printf("%d is the greatest number.", a);
-    // }
-    // else if(b>a && b>c){
-    //     printf("%d is the greatest number.", b);
-    // }
-    // if(c>b && c>a){
-    //     printf("%d is the greatest number.", c);
-    // }
+   //  int a;
+   //  int b;
+   //  int c;
+   //  printf("Enter the height of the rec: ");
+   //  printf("Enter the height of the rec: ");
+   //  scanf("%d %d %d", &a, &b ,&c);
+   //  if(a>b && a>b){
+   //      printf("%d is the greatest number.", a);
+   //  }
+   //  else if(b>a && b>c){
+   //      printf("%d is the greatest number.", b);
+   //  }
+   //  if(c>b && c>a){
+   //      printf("%d is the greatest number.", c);
+   //  }
     
 
-    // int num;
+   //  int num;
 
-    // printf("Enter a number: ");
-    // scanf("%d", &num);
+   //  printf("Enter a number: ");
+   //  scanf("%d", &num);
 
     // //for singular sentences we can choose to not put braces.
     // if(num%2== 0)
@@ -114,33 +129,36 @@ int main(){
 //  40 - 45 d
 //>40 f
 
-int grade ;
-printf("Enter your marks from 0 to 100: ");
-scanf("%d", &grade);
+// int grade ;
+// printf("Enter your marks from 0 to 100: ");
+// scanf("%d", &grade);
 
-if (grade>=75){
-printf("Your grade is : A" );
-}
+// if (grade>=75){
+// printf("Your grade is : A" );
+// }
 
-else if (grade>=60 ){
-printf("Your grade is : B" );
-}
+// else if (grade>=60 ){
+// printf("Your grade is : B" );
+// }
 
-else if (grade >= 45){
-printf("Your grade is : C" );
-}
+// else if (grade >= 45){
+// printf("Your grade is : C" );
+// }
 
-else if (grade>= 40){
-printf("Your grade is : D" );
-}
+// else if (grade>= 40){
+// printf("Your grade is : D" );
+// }
 
-else  if (grade<40){
-printf("Your grade is : F" );
-}
-
-
+// else  if (grade<40){
+// printf("Your grade is : F" );
+// }
 
 
+// for(int i =0; i<10; i++){
+//     printf("Hello\nNamaste\n\");
+// }
 
+
+return 0;
 
 }
