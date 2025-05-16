@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 #include <iostream>
+#include <vector>
 
 using namespace std;
 

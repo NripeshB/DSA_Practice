@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 void possible_permutations(string s, int i, vector<string> &answer)
