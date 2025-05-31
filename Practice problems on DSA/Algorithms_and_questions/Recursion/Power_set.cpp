@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/subsets/
 #include <iostream>
+#include <vector>
 
 using namespace std;
 class Solution
