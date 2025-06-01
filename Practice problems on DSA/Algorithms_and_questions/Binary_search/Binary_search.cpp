@@ -5,7 +5,7 @@
 using namespace std;
 
 int Binary_Search(int arr[], int size, int Key)
-{
+{ 
     int end = size - 1, start = 0;
     int Mid = start + ((end - start) / 2);
     // Below also works but for the integers with values of order 2^31 it misbehaves
