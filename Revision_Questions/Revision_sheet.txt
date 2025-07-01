@@ -4,6 +4,7 @@ Revise the mathematical questions and simple quesitons.
 https://bit.ly/3Ioexjh 
 -> use binary search to cut right portion, then left for first and last occurrences.
 
+
 2. Peak in a mountain array.
 https://leetcode.com/problems/peak-index-in-a-mountain-array/
 -> uses binary search. Try to code it with using the only two conditional statements.
